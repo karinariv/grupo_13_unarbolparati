@@ -4,9 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu carrito de compras</title>
+    <title>Carrito</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@300;400;500&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Carrito de compras</h1>
+    <!-- Header -->
+    <header class="header-productCart">
+        <div class="header-top-productCart">
+            <div class="logo-productCart">
+                <div class="logotipo-productCart"><img src="/img/logo.jpg" alt="aquí se muestra el logo"></div>
+                <div class="burger-menu">
+                    <i class="fa fa-bars burger"></i>
+                </div>
+            </div>
+            <div class="navbar-productCart">
+                <nav class="navbar-top-productCart">
+                    <ul>
+                        <li><a href="">Galería</a></li>
+                        <li><a href="">Explorar por zona</a></li>
+                        <li><i class="fas fa-search"></i><input type="text" name="search-top-productCart" placeholder="Buscar"></li>
+                        <li><a href=""><i class="fas fa-user"></i>Cerrar sesión</a></li>
+                        <li><a href=""><i class="fas fa-cart-plus"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-bottom-productCart">
+            <h2>Productos similares</h2>
+            <h1>[ Aquí va un carrusel de imágenes ]</h1>
+        </div>
+    </header>
+    <!-- Main -->
+    <main class="main-productCart">
+        <div class="titulo-productCart">
+            <h2 class="title-yourCart">Tu carrito de compras</h2>
+        </div>
+        <section class="section-productCart">
+            <article class="article-productCart">
+                <div class="product-left">
+                    <div class="product-name">
+                        <h3>Producto</h3>
+                    </div>
+                    <div class="imagen-producto">
+                        <img src="/img/Producto.jpg" alt="Imagen del producto">
+                    </div>
+                </div>
+                <div class="product-right">
+                    <div class="product-right-superior">
+                        <div>
+                            <label for="cantidad-producto">Cantidad: </label>
+                            <input type="number" name="cantidad-producto" value="1" min="1" max="100" size="3">
+                        </div>
+                        <div class="button-quitar-productCart">
+                            <input type="button" value="Quitar del carrito">
+                        </div>
+                    </div>
+                    <div class="product-right-inferior">
+                        <label for="precio-producto">Precio</label>
+                        <input type="text"  name="precio-producto" value="1234" size="5" readonly>
+                    </div>
+                </div>
+            </article>
+            <article class="article-productCart">
+                <div class="product-left">
+                    <div class="product-name">
+                        <h3>Producto</h3>
+                    </div>
+                    <div class="imagen-producto">
+                        <img src="/img/Producto.jpg" alt="Imagen del producto">
+                    </div>
+                </div>
+                <div class="product-right">
+                    <div class="product-right-superior">
+                        <div>
+                            <label for="cantidad-producto">Cantidad: </label>
+                            <input type="number" name="cantidad-producto" value="1" min="1" max="100" size="3">
+                        </div>
+                        <div class="button-quitar-productCart">
+                            <input type="button" value="Quitar del carrito">
+                        </div>
+                    </div>
+                    <div class="product-right-inferior">
+                        <label for="precio-producto">Precio</label>
+                        <input type="text"  name="precio-producto" value="2345" size="5" readonly>
+                    </div>
+                </div>
+            </article>
+            <article class="article-total-productCart">
+                <div class="total-productCart"> 
+                    <div>
+                        <label for="subtotal-carrito">Subtotal</label>
+                        <input type="text" name="subtotal-carrito" value="3579" size="4" readonly>
+                    </div>
+                    <div>
+                        <label for="iva-carrito">Iva</label>
+                        <input type="text" name="iva-carrito" value="0" size="4" readonly>
+                    </div>
+                    <div>
+                        <label for="total-carrito">Total</label>
+                        <input type="text" name="total-carrito" value="3579" size="4" readonly>
+                    </div>
+                </div>
+            </article>
+            <article class="button-compra-carrito">
+                <button type="submit">Continuar con la compra</button>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-productCart">
+        <section>
+            <div>
+                <h4>Quiénes somos</h4>
+            </div>
+            <div class="somos-productCart">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum provident doloremque, recusandae veniam est libero impedit doloribus.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h4>Contáctanos</h4>
+            </div>
+            <div class="contact-form-productCart">
+                <form action="" method="">
+                    <input type="text" name="nombre" placeholder="Tu nombre"> <br>
+                    <input type="text" name="email" placeholder="Escribe tu email"> <br>
+                    <textarea name="mensaje" id="mensaje" cols="24" rows="4" placeholder="Compártenos tu mensaje aquí"></textarea> <br>
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="socialmedia-productCart">
+                <div class="follow-productCart">
+                    <h4>Síguenos</h4>
+                </div>
+                <div class="redessociales-productCart">
+                    <img class="redes-productCart" src="/img/fb.png" alt="Facebook">
+                    <img class="redes-productCart" src="/img/ig.png" alt="Instagram">
+                    <img class="redes-productCart" src="/img/tw.png" alt="Twitter">
+                </div>
+            </div>
+        </section>
+    </footer>
+
 </body>
 </html>
