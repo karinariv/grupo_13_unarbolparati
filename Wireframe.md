@@ -26,7 +26,7 @@
 
 ## Login
 
-![Login](D:\0000-Digital-House\grupo_13_unarbolparati\wireframes\Alternativa1\04_Login.jpg)
+![Login](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa1/04_Login.jpg)
 
 
 
