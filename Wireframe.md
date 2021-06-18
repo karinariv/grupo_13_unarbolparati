@@ -38,7 +38,7 @@
 
 ## Home
 
-![Home](D:\0000-Digital-House\Wireframe_PROYECTO\Home.PNG)
+![Home](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa2/Home.PNG)
 
 ## Detalle del producto
 
