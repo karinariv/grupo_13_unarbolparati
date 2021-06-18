@@ -7,16 +7,28 @@
     <title>Log in</title>
 </head>
 <body>
-    <p>Esta es la página de LOG IN</p>
+    <header class="header-productCart">
+        <div class="header-top-productCart">
+            <div class="logo-productCart">
+                <div class="logotipo-productCart"><img src="/img/logo.jpg" alt="aquí se muestra el logo"></div>
+                <div class="burger-menu">
+                    <i class="fa fa-bars burger"></i>
+                </div>
+            </div>
+        </div>
+    </header>
     <form action="resultado.html" method="POST">
-        <div>
+        <div class="login">
             <label for="correo"> Correo: </label>
             <input type="email" name="correo" id="correo"> 
         </div>
         <br>
-        <div>
-            <label for="contrasenia"> Contraseña: </label>
-            <input type="password" name="contrasenia" id="contrasenia">
+        <div class="login">
+            <label for="password"> Contraseña: </label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="login">
+            <button type="submit"> Enviar </button>
         </div>
     </form>
 </body>
