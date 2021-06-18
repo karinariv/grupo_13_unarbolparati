@@ -42,17 +42,17 @@
 
 ## Detalle del producto
 
-![Detalle del producto](D:\0000-Digital-House\Wireframe_PROYECTO\detalleProd.PNG)
+![Detalle del producto](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa2/detalleProd.PNG)
 
 ## Carrito
 
-![Carrito](D:\0000-Digital-House\Wireframe_PROYECTO\carrito.PNG)
+![Carrito](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa2/carrito.PNG)
 
 ## Registro
 
-![Registro](D:\0000-Digital-House\Wireframe_PROYECTO\registro.PNG)
+![Registro](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa2/registro.PNG)
 
 ## Login
 
-![Login](D:\0000-Digital-House\Wireframe_PROYECTO\login.PNG)
+![Login](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa2/login.PNG)
 
