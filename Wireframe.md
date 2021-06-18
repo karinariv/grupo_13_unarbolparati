@@ -14,7 +14,7 @@
 
 ## Detalle del producto
 
-![Detalle del producto](D:\0000-Digital-House\grupo_13_unarbolparati\wireframes\Alternativa1\01_Detalle del Producto.jpg)
+![Detalle del producto](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa1/01_Detalle%20del%20Producto.jpg)
 
 ## Carrito
 
