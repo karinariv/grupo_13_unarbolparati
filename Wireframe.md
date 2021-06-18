@@ -18,7 +18,7 @@
 
 ## Carrito
 
-![Carrito](D:\0000-Digital-House\grupo_13_unarbolparati\wireframes\Alternativa1\02_Carrito.jpg)
+![Carrito](https://github.com/karinariv/grupo_13_unarbolparati/blob/main/wireframes/Alternativa1/02_Carrito.jpg)
 
 ## Registro
 
