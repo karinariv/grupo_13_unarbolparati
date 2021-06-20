@@ -411,5 +411,8 @@
 
 /* Estilos login y productDetail*/
 
-
+.login {
+    display: flex;
+    justify-content: center;
+}
 
