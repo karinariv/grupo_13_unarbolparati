@@ -5,12 +5,12 @@
 /* Sección de estilos para la vista index.html */
 /* Los estilos para el header y el footer serán iguales a los estilos planteados en la vista de productCart.html*/
 /* Main*/
+
 .caja-4{
     position:relative;
-    left: 100px;
-    top:100px;
+    bottom: 780px;
+    left: 500px;
 }
-
 
 /* Sección de estilos para la vista productCart.html */
 
