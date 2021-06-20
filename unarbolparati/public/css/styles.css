@@ -64,12 +64,13 @@
 .logotipo-productCart {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%;
 }
 
 .logotipo-productCart img {
-    width: 100%;
+    width: 60%;
+    height: auto;
 }
 
 .header-top-productCart {
@@ -289,7 +290,7 @@
     .logo-productCart {   
         display: flex;
         flex-wrap: wrap;
-        width: 40%;
+        width: 30%;
     }
 
     .logotipo-productCart {
@@ -301,7 +302,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        width: 60%;
+        width: 70%;
     }
 
     .navbar-productCart ul {
