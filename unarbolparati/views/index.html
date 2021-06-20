@@ -2,22 +2,98 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" conten="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio de la página</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@300;400;500&family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/styles.css">
-        <title>Homeunarbolparati</title>
     </head>
     <body>
-        <ul class="nav-bar">
-            <li><a href="">Galería</a></li>
-            <li><a href="">Explora tu zona</a></li>
-            <li><a href="">Log in</a></li>
-            <li><a href="">Sing up</a></li>
-            <li><a href="">Tu carrito</a></li>
-        </ul>
-        
-    </body>
-    <footer>
-        
-    </footer>
+        <!-- Header -->
+        <header class="header-productCart">
+            <div class="header-top-productCart">
+                <div class="logo-productCart">
+                    <div class="logotipo-productCart"><img src="/img/logo.png" alt="aquí se muestra el logo"></div>
+                    <div class="burger-menu">
+                        <i class="fa fa-bars burger"></i>
+                    </div>
+                </div>
+                <div class="navbar-productCart">
+                    <nav class="navbar-top-productCart">
+                        <ul>
+                            <li><a href="">Galería</a></li>
+                            <li><a href="">Explorar por zona</a></li>
+                            <li><i class="fas fa-search"></i><input type="text" name="search-top-productCart" placeholder="Buscar"></li>
+                            <li><a href=""><i class="fas fa-user"></i>Iniciar sesión</a></li>
+                            <li><a href=""><i class="fas fa-cart-plus"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-bottom-productCart">
+                <h2>Productos similares</h2>
+                <h1>[ Aquí va un carrusel de imágenes ]</h1>
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <h3>Región norte</h3>
+            <div class="caja-1">
+                <img src="/img/region_norte.jpg" alt="region_norte">
+            </div>
+            <h3>Región centro</h3>
+            <div class="caja-2">
+                <img src="/img/region_centro.jpg" alt="region_centro">
+            </div>
+            <h3>Región sur</h3>
+            <div class="caja-3">
+                <img src="/img/region_sur.jpg" alt="region_sur">
+            </div>
+            <h3>¡Encuentra tu árbol!</h3>
+            <div class="caja-4">
+                <img src="/img/P_M.jpg" alt="pais">
+            </div>
+        </main>
+    
+<!-- Footer -->
+<footer class="footer-productCart">
+    <section>
+        <div>
+            <h4>Quiénes somos</h4>
+        </div>
+        <div class="somos-productCart">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum provident doloremque, recusandae veniam est libero impedit doloribus.</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h4>Contáctanos</h4>
+        </div>
+        <div class="contact-form-productCart">
+            <form action="" method="">
+                <input type="text" name="nombre" placeholder="Tu nombre"> <br>
+                <input type="text" name="email" placeholder="Escribe tu email"> <br>
+                <textarea name="mensaje" id="mensaje" cols="24" rows="4" placeholder="Compártenos tu mensaje aquí"></textarea> <br>
+                <input type="button" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="socialmedia-productCart">
+            <div class="follow-productCart">
+                <h4>Síguenos</h4>
+            </div>
+            <div class="redessociales-productCart">
+                <img class="redes-productCart" src="/img/fb.png" alt="Facebook">
+                <img class="redes-productCart" src="/img/ig.png" alt="Instagram">
+                <img class="redes-productCart" src="/img/tw.png" alt="Twitter">
+            </div>
+        </div>
+    </section>
+</footer>
+
+</body>
 </html>
