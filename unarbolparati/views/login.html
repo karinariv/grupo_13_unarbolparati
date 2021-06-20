@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@300;400;500&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Log in</title>
 </head>
 <body>
@@ -17,8 +22,9 @@
             </div>
         </div>
     </header>
+    <main class="main-login">
     <form action="resultado.html" method="POST">
-        <div class="login">
+        <br><div class="login">
             <label for="correo"> Correo: </label>
             <input type="email" name="correo" id="correo"> 
         </div>
@@ -27,9 +33,11 @@
             <label for="password"> Contraseña: </label>
             <input type="password" name="password" id="password">
         </div>
+        <br>
         <div class="login">
-            <button type="submit"> Enviar </button>
+            <button type="submit" id="boton-login"> Enviar </button>
         </div>
     </form>
+    </main>
 </body>
 </html>

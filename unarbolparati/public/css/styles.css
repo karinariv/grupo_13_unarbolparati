@@ -417,6 +417,31 @@
 
 .login {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 5%;
 }
 
+.form-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    border-left: #864000 solid 2px;
+    border-right: #864000 solid 2px;
+   
+}
+
+.main-login {
+    font-family: 'Montserrat', sans-serif;
+    border-left: #864000 solid 2px;
+    border-right: #864000 solid 2px;
+}
+
+.login #boton-login {
+    color: #FFF;
+    background-color: #01937c;
+}
+/* fin de estilos product detail*/
