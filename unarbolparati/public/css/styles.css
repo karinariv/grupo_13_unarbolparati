@@ -5,12 +5,12 @@
 /* Sección de estilos para la vista index.html */
 /* Los estilos para el header y el footer serán iguales a los estilos planteados en la vista de productCart.html*/
 /* Main*/
+
 .caja-4{
     position:relative;
-    left: 100px;
-    top:100px;
+    bottom: 780px;
+    left: 500px;
 }
-
 
 /* Sección de estilos para la vista productCart.html */
 
@@ -35,15 +35,60 @@
     width: 40px;
 }
 
+.carrusel {
+    background-color: #FFF;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15%;
+}
+
+.carrusel .slider {
+    background-color: rgba(192,192,192,0.3);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    border-radius: 15%;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.carrusel .slide {
+    width: 70%;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel .slide img {
+    height: 90%;
+    width: auto;
+    border-radius: 25%;
+}
+
+.contenedor-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .header-bottom-productCart {
+    background-color: #9FE6A0;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding-bottom: 30px;
 }
 
 .header-bottom-productCart h1 {
     margin-bottom: 0;
+}
+
+.header-bottom-productCart h2 {
+    margin-top: 0;
 }
 
 .header-productCart {
@@ -279,6 +324,10 @@
         display: none;
     }
 
+    .carrusel .slide {
+        width: 45%;
+    }
+
     .header-top-productCart {
         display: flex;
         flex-wrap: wrap;
@@ -378,6 +427,10 @@
     /* Estilos para productCart.html en laptop */
 
     /* Header */
+    .carrusel .slide {
+        width: 20%;
+    }
+
     .logo-productCart {
         width: 30%;
     }
