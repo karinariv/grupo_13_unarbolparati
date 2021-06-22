@@ -492,6 +492,8 @@
     margin: auto;
     align-items: center;
     padding-top: 5%;
+    font-size: .7em;
+    padding-bottom: 5%;
 }
 
 .label {
@@ -533,7 +535,7 @@
     justify-content: flex-start;
     align-items: right;
     font-family: 'Montserrat', sans-serif;
-    border: #01937C 2px dotted; 
+    border: #01937C 1px solid; 
     margin: 1%; 
 }
 
