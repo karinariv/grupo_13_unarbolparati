@@ -417,6 +417,23 @@
 
 .login {
     display: flex;
+    color: #01937C;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.title-login {
+    color: #01937C;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-v2 {
+    display: flex;
+    color: #01937C;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
@@ -424,24 +441,51 @@
     padding-top: 5%;
 }
 
-.form-login {
+.label {
+    padding: 1%;
+}
+
+
+.login-box {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    border-left: #864000 solid 2px;
-    border-right: #864000 solid 2px;
-   
+    border: #01937C 4px solid;  
+    margin: 15%; 
 }
 
-.main-login {
-    font-family: 'Montserrat', sans-serif;
-    border-left: #864000 solid 2px;
-    border-right: #864000 solid 2px;
-}
 
 .login #boton-login {
     color: #FFF;
     background-color: #01937c;
 }
-/* fin de estilos product detail*/
+
+.box-product-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    border: #01937C 4px solid;  
+    margin: 5%;
+}
+
+.box-product-detail-column {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: unwrap;
+    color: #01937C;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border: #01937C 2px dotted; 
+    margin: 1%; 
+}
+
+.img-product-detail {
+    width: 80%;
+    margin: auto;
+}
+/* fin de estilos login y product detail*/
