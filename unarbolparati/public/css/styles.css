@@ -476,31 +476,114 @@
 
 .login {
     display: flex;
+    color: #01937C;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
     align-items: center;
     padding-top: 5%;
 }
 
-.form-login {
+.title-login {
+    color: #01937C;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-v2 {
     display: flex;
+    color: #01937C;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 5%;
+    font-size: .7em;
+    padding-bottom: 5%;
+}
+
+.label {
+    padding: 1%;
+}
+
+
+.login-box {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    border-left: #864000 solid 2px;
-    border-right: #864000 solid 2px;
-   
+    border: #01937C 4px solid;  
+    margin: 15%; 
 }
 
-.main-login {
-    font-family: 'Montserrat', sans-serif;
-    border-left: #864000 solid 2px;
-    border-right: #864000 solid 2px;
-}
 
 .login #boton-login {
     color: #FFF;
     background-color: #01937c;
 }
-/* fin de estilos product detail*/
+
+.box-product-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    border: #01937C 4px solid;  
+    margin: 5%;
+}
+
+.box-product-detail-column {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: unwrap;
+    color: #01937C;
+    justify-content: flex-start;
+    align-items: right;
+    font-family: 'Montserrat', sans-serif;
+    border: #01937C 1px solid; 
+    margin: 1%; 
+}
+
+.title-detail-product {
+    background-color: #01937C;
+    color: #FFF;
+    margin-bottom: 5%;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.img-product-detail {
+    width: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 5%;
+}
+
+.precio-carrito {
+    padding-top: 8%;
+    text-align: center;
+}
+
+.agregar-carrito {
+    color: #FFF;
+    background-color: #01937C;
+    padding: 10%;
+    border-radius: 10%;
+    margin-left: 3%;
+    margin-right: 6%;
+    width: 70%;
+    text-align: center;
+}
+
+#carrito {
+    color: #01937C;
+}
+
+
+
+.img-product-detail {
+    width: 80%;
+    margin: auto;
+}
+/* fin de estilos login y product detail*/
