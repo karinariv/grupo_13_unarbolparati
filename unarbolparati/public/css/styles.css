@@ -6,12 +6,16 @@
 /* Los estilos para el header y el footer serán iguales a los estilos planteados en la vista de productCart.html*/
 /* Main*/
 
-.caja-4{
-    position:relative;
-    bottom: 780px;
-    left: 500px;
+.caja-1{
+    display:flex;
+    width:50%
 }
-
+.caja-2{
+    display:flex;
+    width: 100%;
+    position:relative;
+    align-items: center;
+}
 /* Sección de estilos para la vista productCart.html */
 
 /* Header */
