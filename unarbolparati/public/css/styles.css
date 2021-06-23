@@ -8,7 +8,9 @@
 
 .caja-1{
     display:flex;
-    width:50%
+    width:50%;
+    align-items: center;
+    
 }
 .caja-2{
     display:flex;
