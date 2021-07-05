@@ -4,8 +4,8 @@
 
 ### Qué se hizo en la semana pasada:
 
-	- Organizamos el trabajo en el tablero de Trello.
-	- Instalamos EJS en nuestro proyecto.
+ - Organizamos el trabajo en el tablero de Trello.
+ - Instalamos EJS en nuestro proyecto.
 
 ### ¿Encontramos algún impedimento?
 
