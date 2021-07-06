@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
+const mainRouter = require('./routes/mainRouter');
 
 const path = require('path');
+
+app.set("view engine", "ejs");
 
 app.use(express.static('public'));
 
@@ -9,22 +12,12 @@ app.listen(3030, () => {
     console.log("Servidor listo en puerto 3030");
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve('./views/index.html'));
-});
+app.use('/', mainRouter);
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.resolve('./views/login.html'));
-});
+app.use('/login', mainRouter);
 
-app.get('/productCart', (req, res) => {
-    res.sendFile(path.resolve('./views/productCart.html'));
-});
+app.use('/productCart', mainRouter);
 
-app.get('/productDetail', (req, res) => {
-    res.sendFile(path.resolve('./views/productDetail.html'));
-});
+app.use('/productDetail', mainRouter);
 
-app.get('/register', (req, res) => {
-    res.sendFile(path.resolve('./views/register.html'));
-});
+app.use('/register', mainRouter);
