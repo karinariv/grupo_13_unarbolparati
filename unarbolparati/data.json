@@ -1,6 +1,7 @@
 {
  "listaProductos": [
         {
+            "id": "1",
             "nombre":"Jinicuil, cuajinicuil",
             "nombre_cientifico":"Inga Jinicuil",
             "region":"Sur",
@@ -12,10 +13,11 @@
             "clima":"húmedo",
             "luz":"pleno sol",
             "fruto":"comestible",
-            "imagen1":"./img/inga-1.jpg",
-            "imagen2":"./img/inga-2.jpg"
+            "imagen1":"/img/inga-1.jpg",
+            "imagen2":"/img/inga-2.jpg"
         },
         {
+            "id": 2,
             "nombre":"Rosa morada",
             "nombre_cientifico":"Tabebuia Rosae",
             "region":"Sur",
@@ -27,10 +29,11 @@
             "clima":"templado y subhúmedo",
             "luz":"pleno sol",
             "fruto":"no comestible",
-            "imagen1":"./img/tabe-1.jpg",
-            "imagen2":"./img/tabe-2.jpg"
+            "imagen1":"/img/tabe-1.jpg",
+            "imagen2":"/img/tabe-2.jpg"
         },
         {
+            "id": 3,
             "nombre":"Pino lacio",
             "nombre_cientifico":"Pinus Devoniana",
             "region":"Centro",
@@ -42,10 +45,11 @@
             "clima":"subtropical",
             "luz":"media sombra",
             "fruto":"no comestible",
-            "imagen1":"./img/pinus1.jpg",
-            "imagen2":"./img/pinus2.jpg"
+            "imagen1":"/img/pinus1.jpg",
+            "imagen2":"/img/pinus2.jpg"
         },
         {
+            "id": 4,
             "nombre":"Ahuehuete, sabino",
             "nombre_cientifico":"Taxodium huegelii",
             "region":"Centro",
@@ -57,10 +61,11 @@
             "clima":"templado y frío",
             "luz":"sol directo",
             "fruto":"no comestible",
-            "imagen1":"./img/taxo1.jpg",
-            "imagen2":"./img/taxo2.jpg"
+            "imagen1":"/img/taxo1.jpg",
+            "imagen2":"/img/taxo2.jpg"
         },
         {
+            "id": 5,
             "nombre":"Ébano",
             "nombre_cientifico":"Ebenopsis Ebano",
             "region":"Norte",
@@ -72,10 +77,11 @@
             "clima":"cálido",
             "luz":"pleno sol",
             "fruto":"no comestible",
-            "imagen1":"./img/ebeno1.jpg",
-            "imagen2":"./img/ebeno2.jpg"
+            "imagen1":"/img/ebeno1.jpg",
+            "imagen2":"/img/ebeno2.jpg"
         },
         {
+            "id": 6,
             "nombre":"Palo verde",
             "nombre_cientifico":"Parkinsonia aculeata",
             "region":"Norte",
@@ -87,8 +93,8 @@
             "clima":"cálido",
             "luz":"pleno sol",
             "fruto":"no comestible",
-            "imagen1":"./img/parkin1.jpg",
-            "imagen2":"./img/parkin2.jpg"
+            "imagen1":"/img/parkin1.jpg",
+            "imagen2":"/img/parkin2.jpg"
         }
     ]
 }
