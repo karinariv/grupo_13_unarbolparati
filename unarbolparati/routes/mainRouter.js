@@ -13,5 +13,7 @@ router.get('/productDetail', mainController.productDetail)
 
 router.get('/register', mainController.register);
 
+router.get('/addProduct', mainController.addProduct);
+
 // Acá exportamos el resultado
 module.exports = router;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../partials/head') %>
+    <title>Un árbol para ti - Agregar Producto</title>
+</head>
+<body>
+    <!-- Header -->
+    <%- include('../partials/header') %>
+    <main>
+    <h1 class="title-login"> Agregar Producto </h1>
+    <br>
+    <form action="" method="POST">
+        <div class="login-box">
+            <br>
+            <div class="addProduct">
+                <label for="nombre" class="label"> Nombre a mostrar: </label>
+                <input type="text" name="nombre" id="nombre"> 
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="imagen" class="label"> Cargar Imagen: </label>
+                <input type="file" name="imagen" id="imagen">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="precio" class="label"> Precio:  </label>
+                <input type="text" name="precio" id="precio">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="informacion" class="label"> Información del árbol:</label>
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="nombreCientifico" class="label"> Nombre científico:  </label>
+                <input type="text" name="nombreCientifico" id="nombreCientifico">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="nombreComun" class="label"> Nombre común:  </label>
+                <input type="text" name="nombreComun" id="nombreComun">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="tipo" class="label"> Tipo de árbol:  </label>
+                <input type="text" name="tipo" id="tipo">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="altura" class="label"> Altura:  </label>
+                <input type="text" name="altura" id="altura">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="crecimiento" class="label"> Crecimiento:  </label>
+                <input type="text" name="crecimiento" id="crecimiento">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="riego" class="label"> Riego:  </label>
+                <input type="text" name="riego" id="riego">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="suelo" class="label"> Suelo:  </label>
+                <input type="text" name="suelo" id="suelo">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="clima" class="label"> Clima:  </label>
+                <input type="text" name="clima" id="clima">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="luz" class="label"> Luz necesaria:  </label>
+                <input type="text" name="luz" id="luz">
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="fruto" class="label"> Fruto:  </label>
+                <input type="text" name="fruto" id="fruto">
+            </div>
+            <br>
+            <div class="addProduct">
+                <button type="submit" id="boton-login"> Agregar </button>
+            </div>
+            <br>
+        </div>
+    </form>
+    </main>
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+</body>
+</html>

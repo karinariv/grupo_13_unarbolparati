@@ -373,6 +373,23 @@ display: flex;
 }
 
 
+/* Estilos formulario addProduct */
+
+.addProduct {
+    display: flex;
+    color: #01937C;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 0.4%;
+}
+
+.addProduct #boton-login {
+    color: #FFF;
+    background-color: #01937c;
+}
 
 
 
@@ -479,7 +496,18 @@ display: flex;
         justify-content: space-between;
     }
 
-    
+    /* Estilos formulario addProduct en tablet */
+
+    .addProduct {
+        display: flex;
+        color: #01937C;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        margin: 1rem;
+        align-items: center;
+        padding-top: 0.4%;
+    }
 
 }
 

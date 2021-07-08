@@ -21,3 +21,5 @@ app.use('/productCart', mainRouter);
 app.use('/productDetail', mainRouter);
 
 app.use('/register', mainRouter);
+
+app.use('/addProduct', mainRouter);
