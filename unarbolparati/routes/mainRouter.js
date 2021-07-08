@@ -15,5 +15,7 @@ router.get('/register', mainController.register);
 
 router.get('/addProduct', mainController.addProduct);
 
+router.get('/panelAdmin', mainController.panelAdmin);
+
 // Acá exportamos el resultado
 module.exports = router;

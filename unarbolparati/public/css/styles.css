@@ -391,7 +391,23 @@ display: flex;
     background-color: #01937c;
 }
 
+/* Estilos Panel de Administrador */
 
+.admin-buttons-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-button {
+    color: #FFF;
+    background-color: #01937C;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    padding: 10px;
+}
 
 /* Contenido para tablet */
 
@@ -507,6 +523,15 @@ display: flex;
         margin: 1rem;
         align-items: center;
         padding-top: 0.4%;
+    }
+
+    /* Estilos Panel de Administrador */
+
+    .admin-buttons-box {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
 }

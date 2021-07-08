@@ -16,6 +16,9 @@ const controlador = {
     },
     addProduct: (req, res) => {
         res.render('./products/addProduct');
+    },
+    panelAdmin: (req, res) => {
+        res.render('./products/panelAdmin');
     }
 }
 // Acá exportamos el resultado
