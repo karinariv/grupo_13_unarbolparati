@@ -10,21 +10,22 @@
     <div>
         <h1 class="title-login">Lista de Árboles disponibles</p>
     </div>
-    <main>    
+    <main>
+        <% for(let i=0; i < listProd.listaProductos.length; i++) { %>    
         <div class="box-product-detail">
             <div class="box-product-detail-column">
-                <div class="title-detail-product">  Palo verde </div>
-                <div> <img class="img-product-detail" src="/img/parkin1.jpg" alt="inga-1"> </div>
-                <div> <img class="img-product-detail" src="/img/parkin2.jpg" alt="inga-1"> </div>
+                <div class="title-detail-product">  <%= listProd.listaProductos[i].nombre %> </div>
+                <div> <img class="img-product-detail" src= <%= listProd.listaProductos[i].imagen1 %> alt="inga-1"> </div>
+                <div> <img class="img-product-detail" src=<%= listProd.listaProductos[i].imagen2 %> alt="inga-1"> </div>
                 <div class="precio-carrito">  <strong> $1234 </strong> </div>
                 <div class="precio-carrito">Agregar carrito <a href=""><i class="fas fa-cart-plus" id="carrito"></i></a> </div>
             </div>
             <div class="box-product-detail-column">
-                <div class="title-detail-product"> Región norte </div>
+                <div class="title-detail-product"> <%= listProd.listaProductos[i].region %> </div>
                 <div> <strong> Características</strong> </div>
                 <div><ul>
-                    <li> <strong>Nombre científico:</strong>  <em>Parkinsonia aculeata</em> </li>
-                    <li> <strong>Nombre común:</strong>  Palo verde. </li>
+                    <li> <strong>Nombre científico:</strong>  <em><%= listProd.listaProductos[i].nombre_cientifico %></em> </li>
+                    <li> <strong>Nombre común:</strong>  <%= listProd.listaProductos[i].nombre %> </li>
                     <li> <strong>Tipo de árbol:</strong>  Caducifolio. </li>
                     <li> <strong>Altura:</strong>  8 a 10 m. </li>
                     <li> <strong>Crecimiento:</strong> rápido. </li>
@@ -36,6 +37,7 @@
                 </ul></div>
             </div>
         </div>
+        <% } %>
     </main>
     <!-- Footer -->
     <%- include('../partials/footer') %>

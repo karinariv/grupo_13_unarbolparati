@@ -5,7 +5,7 @@ const fs = require('fs');
 let listProd = fs.readFileSync('./data.json', 'utf-8');
 
 listProd = JSON.parse(listProd);
-//console.log(listProd);
+console.log(listProd.listaProductos.length);
 
 
 // Acá nos falta un objeto literal con las acciones para cada ruta
