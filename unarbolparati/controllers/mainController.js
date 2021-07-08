@@ -8,9 +8,17 @@ const controlador = {
     productCart: (req, res) => {
         res.render('productCart');
     },
-    productDetail: (req, res) => {
+/*     productDetail: (req, res) => {
         res.render('./products/productDetail');
-    },
+    }, */
+/*     productDetail: (req, res) => {
+        let arbol;
+        const idProducto = req.params.id;
+        for (let arbol of dataArboles.listaProductos) {
+                res.render('./products/productDetail', {arbol: arbol[idProducto-1]});
+                return arbol;
+        }
+    }, */
     register: (req, res) => {
         res.render('./users/register');
     },
