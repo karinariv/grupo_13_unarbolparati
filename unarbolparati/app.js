@@ -25,3 +25,5 @@ app.use('/register', mainRouter);
 app.use('/addProduct', mainRouter);
 
 app.use('/panelAdmin', mainRouter);
+
+app.use('/editProduct', mainRouter);

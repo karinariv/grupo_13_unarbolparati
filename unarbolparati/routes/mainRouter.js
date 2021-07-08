@@ -17,5 +17,7 @@ router.get('/addProduct', mainController.addProduct);
 
 router.get('/panelAdmin', mainController.panelAdmin);
 
+router.get('/editProduct', mainController.editProduct);
+
 // Acá exportamos el resultado
 module.exports = router;
