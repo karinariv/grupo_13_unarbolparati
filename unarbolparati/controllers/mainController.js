@@ -1,18 +1,27 @@
 const controlador = {
     index: (req, res) => {
-        return res.render('index');
+        res.render('index');
     },
     login: (req, res) => {
-        return res.render('./users/login');
+        res.render('./users/login');
     },
     productCart: (req, res) => {
-        return res.render('productCart');
+        res.render('productCart');
     },
     productDetail: (req, res) => {
-        return res.render('./products/productDetail');
+        res.render('./products/productDetail');
     },
     register: (req, res) => {
-        return res.render('./users/register');
+        res.render('./users/register');
+    },
+    addProduct: (req, res) => {
+        res.render('./products/addProduct');
+    },
+    panelAdmin: (req, res) => {
+        res.render('./products/panelAdmin');
+    },
+    editProduct: (req, res) => {
+        res.render('./products/editProduct');
     }
 }
 // Acá exportamos el resultado
