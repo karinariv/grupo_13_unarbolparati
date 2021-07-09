@@ -1,7 +1,7 @@
 {
  "listaProductos": [
         {
-            "id": "1",
+            "id": 1,
             "nombre":"Jinicuil, cuajinicuil",
             "nombre_cientifico":"Inga Jinicuil",
             "region":"Sur",
