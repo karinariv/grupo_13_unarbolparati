@@ -1,0 +1,49 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"firstName": "Karina",
+			"lastName": "Rivera",	
+			"email": "karina@gmail.com",
+			"password": "1234",
+			"image": "../img/usuario_1.jpg",
+			"admin": true
+		},
+		{
+			"id": 2,
+			"firstName": "Daniel",
+			"lastName": "Mendoza",	
+			"email": "mi-email@gmail.com",
+			"password": "1234",
+			"image": "../img/usuario_2.jpg",
+			"admin": true
+		},
+        {
+            "id": 3,
+			"firstName": "Juan",
+			"lastName": "Lopez",	
+			"email": "userJuan@gmail.com",
+			"password": "0000",
+			"image": "../img/usuario_3.jpg",
+			"admin": false
+        },
+        {
+            "id": 4,
+			"firstName": "Ana",
+			"lastName": "Delgado",	
+			"email": "userAna@gmail.com",
+			"password": "0000",
+			"image": "../img/usuario_4.jpg",
+			"admin": false
+        },
+        {
+            "id": 5,
+			"firstName": "Teresa",
+			"lastName": "Juarez",	
+			"email": "userTeresa@gmail.com",
+			"password": "0000",
+			"image": "../img/usuario_5.jpg",
+			"admin": false
+        }
+	]
+}
