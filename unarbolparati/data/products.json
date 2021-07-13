@@ -1,0 +1,102 @@
+
+{
+    "listaProductos": [
+           {
+               "id": 1,
+               "nombre":"Jinicuil, cuajinicuil",
+               "nombre_cientifico":"Inga Jinicuil",
+               "region":"Sur",
+               "tipo":"Perennifolio",
+               "altura":"15 a 20 m",
+               "crecimiento":"rápido",
+               "riego":"frecuente(4-5 veces por semana)",
+               "suelo":"bueno y enriquecido",
+               "clima":"húmedo",
+               "luz":"pleno sol",
+               "fruto":"comestible",
+               "imagen1":"/img/inga-1.jpg",
+               "imagen2":"/img/inga-2.jpg"
+           },
+           {
+               "id": 2,
+               "nombre":"Rosa morada",
+               "nombre_cientifico":"Tabebuia Rosae",
+               "region":"Sur",
+               "tipo":"Caducifolio",
+               "altura":"25 a 30 m",
+               "crecimiento":"rápido",
+               "riego":"moderado (2-3 veces por semana)",
+               "suelo":"calizo y con mal drenaje",
+               "clima":"templado y subhúmedo",
+               "luz":"pleno sol",
+               "fruto":"no comestible",
+               "imagen1":"/img/tabe-1.jpg",
+               "imagen2":"/img/tabe-2.jpg"
+           },
+           {
+               "id": 3,
+               "nombre":"Pino lacio",
+               "nombre_cientifico":"Pinus Devoniana",
+               "region":"Centro",
+               "tipo":"Perennifolio",
+               "altura":"20 a 30 m",
+               "crecimiento":"rápido",
+               "riego":"moderado (2-3 veces por semana)",
+               "suelo":"bueno y enriquecido",
+               "clima":"subtropical",
+               "luz":"media sombra",
+               "fruto":"no comestible",
+               "imagen1":"/img/pinus1.jpg",
+               "imagen2":"/img/pinus2.jpg"
+           },
+           {
+               "id": 4,
+               "nombre":"Ahuehuete, sabino",
+               "nombre_cientifico":"Taxodium huegelii",
+               "region":"Centro",
+               "tipo":"Perennifolio",
+               "altura":"30 a 40 m",
+               "crecimiento":"rápido",
+               "riego":"frecuente (3-4 veces por semana)",
+               "suelo":"bueno y húmedo",
+               "clima":"templado y frío",
+               "luz":"sol directo",
+               "fruto":"no comestible",
+               "imagen1":"/img/taxo1.jpg",
+               "imagen2":"/img/taxo2.jpg"
+           },
+           {
+               "id": 5,
+               "nombre":"Ébano",
+               "nombre_cientifico":"Ebenopsis Ebano",
+               "region":"Norte",
+               "tipo":"Perennifolio",
+               "altura":"4 a 10 m",
+               "crecimiento":"medio",
+               "riego":"poco (1-2 veces por semana)",
+               "suelo":"bueno y ligero",
+               "clima":"cálido",
+               "luz":"pleno sol",
+               "fruto":"no comestible",
+               "imagen1":"/img/ebeno1.jpg",
+               "imagen2":"/img/ebeno2.jpg"
+           },
+           {
+               "id": 6,
+               "nombre":"Palo verde",
+               "nombre_cientifico":"Parkinsonia aculeata",
+               "region":"Norte",
+               "tipo":"Caducifolio",
+               "altura":"8 a 10 m",
+               "crecimiento":"rápido",
+               "riego":"poco (1-2 veces por semana)",
+               "suelo":"bueno y ligero",
+               "clima":"cálido",
+               "luz":"pleno sol",
+               "fruto":"no comestible",
+               "imagen1":"/img/parkin1.jpg",
+               "imagen2":"/img/parkin2.jpg"
+           }
+       ]
+   }
+   
