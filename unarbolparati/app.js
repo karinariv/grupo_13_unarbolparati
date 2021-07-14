@@ -34,7 +34,7 @@ app.use('/editProduct', mainRouter);
 app.use('/listProd', mainRouter);
 
 /* Para poder usar el POST y json*/
-app.use(express.urlencoder({extended:false}));
+app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 /* Para poder usar el PUT y DELETE*/
