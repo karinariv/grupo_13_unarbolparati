@@ -26,3 +26,4 @@ router.get('/listProd', listProdController.listProd);
 
 // Acá exportamos el resultado
 module.exports = router;
+
