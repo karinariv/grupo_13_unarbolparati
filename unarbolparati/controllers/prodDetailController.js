@@ -1,6 +1,6 @@
 // Controlador ProdDetail
 
-const dataArboles = require('../data.json');
+const dataArboles = require('../data/products.json');
 
 const prodDetailController = {
     productDetail: (req, res) => {
