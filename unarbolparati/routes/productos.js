@@ -9,4 +9,32 @@ router.get('/detalle/:id', (req, res) => {
     res.send('Detalle del producto ' + req.params.id )
 })
 
+/* Kari*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dani */
+
+
+
+
+
+
+
+
 module.exports = router;

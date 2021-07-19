@@ -51,3 +51,24 @@ app.get('/yoyo/:algo?', (req, res) => {
     res.send("This is a Detail " + req.params.algo);
 });
 
+
+/* Kari*/
+
+
+
+
+
+
+
+
+
+/* Dani */
+
+
+
+
+
+
+
+
+
