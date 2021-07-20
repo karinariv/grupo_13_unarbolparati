@@ -1,6 +1,5 @@
 
-{
-    "listaProductos": [
+[
            {
                "id": 1,
                "nombre":"Jinicuil, cuajinicuil",
@@ -104,5 +103,4 @@
                "precio":1234
            }
        ]
-   }
    

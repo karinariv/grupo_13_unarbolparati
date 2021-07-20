@@ -1,10 +1,10 @@
 <div class="contenedor-carrusel">
     <div class="carrusel">
         <div class="slider">
-            <% for(let i=0; i < dataArboles.listaProductos.length; i++) { %>
+            <% for(let i=0; i < dataArboles.length; i++) { %>
             <div class="slide" id="slide-1">
-                <a href="/productDetail/<%=dataArboles.listaProductos[i].id%>">
-                    <img src="<%= dataArboles.listaProductos[i].imagen1 %>" alt="imagen">
+                <a href="/productDetail/<%=dataArboles[i].id%>">
+                    <img src="<%= dataArboles[i].imagen1 %>" alt="imagen">
                 </a>
             </div>
             <% } %>
