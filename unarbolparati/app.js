@@ -17,6 +17,9 @@ app.listen(3030, () => {
     console.log("Servidor listo en puerto 3030");
 });
 
+/* Para poder usar el POST y json*/
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 app.use('/', mainRouter);
 
@@ -40,9 +43,7 @@ app.use('/productos',rutasProductos); //nuevo recurso especificado en routes pro
 
 
 
-/* Para poder usar el POST y json*/
-app.use(express.urlencoded({extended:false}));
-app.use(express.json());
+
 
 /* Para poder usar el PUT y DELETE*/
 app.use(methodOverride('_method'));

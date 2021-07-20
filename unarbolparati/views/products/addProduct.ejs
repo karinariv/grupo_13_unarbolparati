@@ -10,11 +10,11 @@
     <main>
     <h1 class="title-login"> Agregar Producto </h1>
     <br>
-    <form action="" method="POST">
+    <form action="/productos/crear" method="POST" enctype="multipart/form-data">
         <div class="login-box">
             <br>
             <div class="addProduct">
-                <label for="nombre" class="label"> Nombre a mostrar: </label>
+                <label for="nombre" class="label"> Nombre común: </label>
                 <input type="text" name="nombre" id="nombre"> 
             </div>
             <br>
@@ -38,8 +38,8 @@
             </div>
             <br>
             <div class="addProduct">
-                <label for="nombreComun" class="label"> Nombre común:  </label>
-                <input type="text" name="nombreComun" id="nombreComun">
+                <label for="region" class="label"> Región:  </label>
+                <input type="text" name="region" id="region">
             </div>
             <br>
             <div class="addProduct">
