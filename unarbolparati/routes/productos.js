@@ -27,7 +27,7 @@ const upload = multer({storage: storage});
 
 // crear producto
 router.get('/crear', productos2Controller.crear);
-router.post('/crear', upload.single("imagen"), productos2Controller.almacenar);
+router.post('/crear', upload.single("imagen1"), productos2Controller.almacenar);
 
 
 

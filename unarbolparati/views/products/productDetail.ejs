@@ -8,14 +8,14 @@
     <!-- Header -->
     <%- include('../partials/header') %>
     <div>
-        <h1 class="title-login">Página del producto <%= listaProductos.id %> </p>
+        <h1 class="title-login">Página del producto "<%= listaProductos.nombre %>" </p>
     </div>
     <main>
         <div class="box-product-detail">
             <div class="box-product-detail-column">
                 <div class="title-detail-product"> <%= listaProductos.nombre %> </div>
-                <div> <img class="img-product-detail" src="<%= listaProductos.imagen1 %>" alt="inga-1"> </div>
-                <div> <img class="img-product-detail" src="<%= listaProductos.imagen2 %>" alt="inga-1"> </div>
+                <div> <img class="img-product-detail" src="<%=listaProductos.imagen1%>" alt="imagen-producto"> </div>
+                <div> <!-- <img class="img-product-detail" src="<%= listaProductos.imagen2 %>" alt="imagen-producto"> --> </div>
                 <div class="precio-carrito">  <strong> $ <%= listaProductos.precio %> </strong> </div>
                 <div class="precio-carrito">Agregar carrito <a href=""><i class="fas fa-cart-plus" id="carrito"></i></a> </div>
             </div>
