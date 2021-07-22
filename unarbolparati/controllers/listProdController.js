@@ -15,6 +15,9 @@ const lPcontrolador = {
         let id = req.params.id;
 
         return res.render('./products/listProd', {listProd});
+    },
+    simplyProducts: (req, res) => {
+        res.render('./products/productos', {listProd});
     }
 }
 // Acá exportamos el resultado

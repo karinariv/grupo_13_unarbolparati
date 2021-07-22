@@ -2,10 +2,9 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const multer = require('multer');
+const listProdController = require('../controllers/listProdController');
 
-router.get('/', (req,res) => {
-    res.send('Productos listados sin detalle solo nombre');
-})
+router.get('/', listProdController.simplyProducts);
 
 router.get('/detalle/:id', (req, res) => {
     res.send('Detalle del producto ' + req.params.id )
