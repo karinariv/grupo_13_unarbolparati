@@ -28,7 +28,7 @@ const productos2Controller = {
             clima: req.body.clima,
             luz: req.body.luz,
             fruto: req.body.fruto,
-            imagen: req.file.filename,
+            imagen1: '/img/' + req.file.filename,
             precio: req.body.precio,
             id: getId()
         };
