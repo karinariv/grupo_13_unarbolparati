@@ -10,11 +10,85 @@
     <main>
         <h1 class="title-login"> Editar Producto </h1>
         <br>
-        <div class="login-box">
-            <br>
-            <!-- El contenido va aquí -->
-        </div>
-    </main>
+        <form action="/productos/editar?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div class="login-box">
+                <br>
+                <div class="addProduct">
+                    <label for="nombre" class="label" > Nombre común:  </label>
+                    <input type="text" name="nombre" id="nombre" value= "<%= productToEdit.nombre %>"> 
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="imagen1" class="label"> Cargar Imagen: </label>
+                    <input type="file" name="imagen1" id="imagen1">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="precio" class="label"> Precio:  </label>
+                    <input type="text" name="precio" id="precio" value= "<%= productToEdit.precio %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="informacion" class="label"> Información del árbol:</label>
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="nombre_cientifico" class="label"> Nombre científico:  </label>
+                    <input type="text" name="nombre_cientifico" id="nombre_cientifico" value= "<%= productToEdit.nombre_cientifico %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="region" class="label"> Región:  </label>
+                    <input type="text" name="region" id="region" value= "<%= productToEdit.region %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="tipo" class="label"> Tipo de árbol:  </label>
+                    <input type="text" name="tipo" id="tipo" value= "<%= productToEdit.tipo %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="altura" class="label"> Altura:  </label>
+                    <input type="text" name="altura" id="altura" value= "<%= productToEdit.altura %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="crecimiento" class="label"> Crecimiento:  </label>
+                    <input type="text" name="crecimiento" id="crecimiento" value= "<%= productToEdit.crecimiento %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="riego" class="label"> Riego:  </label>
+                    <input type="text" name="riego" id="riego" value= "<%= productToEdit.riego %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="suelo" class="label"> Suelo:  </label>
+                    <input type="text" name="suelo" id="suelo" value= "<%= productToEdit.suelo %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="clima" class="label"> Clima:  </label>
+                    <input type="text" name="clima" id="clima" value= "<%= productToEdit.clima %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="luz" class="label"> Luz necesaria:  </label>
+                    <input type="text" name="luz" id="luz" value= "<%= productToEdit.luz %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <label for="fruto" class="label"> Fruto:  </label>
+                    <input type="text" name="fruto" id="fruto" value= "<%= productToEdit.fruto %>">
+                </div>
+                <br>
+                <div class="addProduct">
+                    <button type="submit" id="boton-login"> Guardar cambios </button>
+                </div>
+                <br>                
+            </div>
+        </form>
+        </main>
     <!-- Footer -->
     <%- include('../partials/footer') %>
 </body>
