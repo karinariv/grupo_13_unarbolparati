@@ -391,6 +391,12 @@ display: flex;
     background-color: #01937c;
 }
 
+/* Estilos botones vista productDetail */
+
+.detail #action-button- {
+    color: #FFF;
+    background-color: #01937c;
+}
 /* Estilos Panel de Administrador */
 
 .admin-buttons-box {

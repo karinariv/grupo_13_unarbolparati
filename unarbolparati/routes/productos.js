@@ -28,6 +28,8 @@ const upload = multer({storage: storage});
 router.get('/crear', productos2Controller.crear);
 router.post('/crear', upload.single("imagen1"), productos2Controller.almacenar);
 
+// borrar producto
+router.delete('/productDetail/:id', productos2Controller.borrar);
 
 
 

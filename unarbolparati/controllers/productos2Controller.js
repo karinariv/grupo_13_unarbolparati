@@ -37,6 +37,14 @@ const productos2Controller = {
 
         fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, 2));
         res.redirect('/listProd');
+    },
+
+    borrar: (req, res) => {
+        let resultadoJson = productos.filter((elementos) => {
+            return (elementos.id != req.params.id);
+        } );
+        fs.writeFileSync(productosFilePath, JSON.stringify(resultadoJson, null, 2));
+        res.redirect('/listProd');
     }
 }
 

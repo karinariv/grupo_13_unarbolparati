@@ -22,18 +22,24 @@
             <div class="box-product-detail-column">
                 <div class="title-detail-product"> Región <%= listaProductos.region %> </div>
                 <div> <strong> Características</strong> </div>
-                <div><ul>
-                    <li> <strong>Nombre científico:</strong>  <em><%= listaProductos.nombre_cientifico %></em> </li>
-                    <li> <strong>Nombre común:</strong>  <%= listaProductos.nombre %> </li>
-                    <li> <strong>Tipo de árbol:</strong>  <%= listaProductos.tipo %> </li>
-                    <li> <strong>Altura:</strong>  <%= listaProductos.altura %> </li>
-                    <li> <strong>Crecimiento:</strong> <%= listaProductos.crecimiento %> </li>
-                    <li> <strong>Riego:</strong> <%= listaProductos.riego %> </li>
-                    <li> <strong>Suelo:</strong> <%= listaProductos.suelo %> </li>
-                    <li> <strong>Clima:</strong> <%= listaProductos.clima %> </li>
-                    <li> <strong>Luz necesaria:</strong> <%= listaProductos.luz %> </li>
-                    <li> <strong>Fruto:</strong> <%= listaProductos.fruto %> </li>
-                </ul></div>
+                <div>
+                    <ul>
+                        <li> <strong>Nombre científico:</strong>  <em><%= listaProductos.nombre_cientifico %></em> </li>
+                        <li> <strong>Nombre común:</strong>  <%= listaProductos.nombre %> </li>
+                        <li> <strong>Tipo de árbol:</strong>  <%= listaProductos.tipo %> </li>
+                        <li> <strong>Altura:</strong>  <%= listaProductos.altura %> </li>
+                        <li> <strong>Crecimiento:</strong> <%= listaProductos.crecimiento %> </li>
+                        <li> <strong>Riego:</strong> <%= listaProductos.riego %> </li>
+                        <li> <strong>Suelo:</strong> <%= listaProductos.suelo %> </li>
+                        <li> <strong>Clima:</strong> <%= listaProductos.clima %> </li>
+                        <li> <strong>Luz necesaria:</strong> <%= listaProductos.luz %> </li>
+                        <li> <strong>Fruto:</strong> <%= listaProductos.fruto %> </li>
+                    </ul>
+                    <a href="" class="detail" id="action-button-">EDITAR</a>
+                    <form action="/productos/productDetail/<%=listaProductos.id%>?_method=DELETE" method="POST">
+                        <button type="submit" class="detail" id="action-button-">BORRAR</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

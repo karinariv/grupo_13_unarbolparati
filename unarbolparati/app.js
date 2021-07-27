@@ -9,6 +9,9 @@ const path = require('path');
 /* Para poder usar el PUT y DELETE*/
 const methodOverride = require('method-override');
 
+/* Para poder usar el PUT y DELETE*/
+app.use(methodOverride('_method'));
+
 app.set("view engine", "ejs");
 
 app.use(express.static('public'));
@@ -45,8 +48,7 @@ app.use('/productos',rutasProductos); //nuevo recurso especificado en routes pro
 
 
 
-/* Para poder usar el PUT y DELETE*/
-app.use(methodOverride('_method'));
+
 
 app.get('/yoyo/:algo?', (req, res) => {
     res.send("This is a Detail " + req.params.algo);

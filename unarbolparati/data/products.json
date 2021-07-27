@@ -164,38 +164,6 @@
     "id": "22471c89-6f25-4f9e-b376-28956b489afd"
   },
   {
-    "nombre": "Araucaria het",
-    "nombre_cientifico": "Araucaria heterophylla",
-    "region": "Sí",
-    "tipo": "Sí",
-    "altura": "Sí",
-    "crecimiento": "Sí",
-    "riego": "Sí",
-    "suelo": "Sí",
-    "clima": "Sí",
-    "luz": "Sí",
-    "fruto": "Sí",
-    "imagen1": "/img/imagen1-1626972570496.jpg",
-    "precio": "2323",
-    "id": "63f9ac9a-2e6e-4788-bd3d-c5077640c94c"
-  },
-  {
-    "nombre": "Plumeria rubra",
-    "nombre_cientifico": "Cacalosúchil",
-    "region": "México",
-    "tipo": "Floral",
-    "altura": "10 metros",
-    "crecimiento": "lento",
-    "riego": "Moderado",
-    "suelo": "Sí",
-    "clima": "Cálido",
-    "luz": "Sol directo",
-    "fruto": "Ninguno",
-    "imagen1": "/img/imagen1-1626985323104.jpg",
-    "precio": "3579",
-    "id": "21166f06-abc8-4dd3-96d4-23ec31bc80e8"
-  },
-  {
     "nombre": "araucaria",
     "nombre_cientifico": "araucaria",
     "region": "Centro",
