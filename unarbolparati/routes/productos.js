@@ -28,6 +28,11 @@ const upload = multer({storage: storage});
 router.get('/crear', productos2Controller.crear);
 router.post('/crear', upload.single("imagen1"), productos2Controller.almacenar);
 
+// editar producto
+router.get('/editar/:id', productos2Controller.editar);
+router.put('/editar', function(req, res) {
+    res.send("Fui por PUT");
+});
 
 
 

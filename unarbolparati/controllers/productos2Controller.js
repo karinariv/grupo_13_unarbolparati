@@ -13,6 +13,13 @@ const productos2Controller = {
         res.render('products/addProduct');
     },
 
+    // formulario para editar producto
+    editar: (req, res) => {
+        let idProduct = req.params.id;
+        let productToEdit = productos[idProduct];
+        res.render('products/editProduct', {productToEdit} );
+    },
+
     // formulario para almacenar producto nuevo
     almacenar: (req, res) => {
 
