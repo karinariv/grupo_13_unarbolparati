@@ -17,7 +17,31 @@ const productos2Controller = {
     editar: (req, res) => {
         let idProduct = req.params.id;
         let productToEdit = productos[idProduct];
-        res.render('products/editProduct', {productToEdit} );
+        res.render('products/editProduct', {productToEdit, idProduct} ); 
+    },
+
+    // formulario para guardar cambios de edición
+    guardarCambios: (req, res) => {
+        let idProduct = req.params.id;
+        let productosEdit = productos;
+        productosEdit[idProduct].nombre = req.body.nombre;
+        productosEdit[idProduct].nombre_cientifico = req.body.nombre_cientifico;
+        productosEdit[idProduct].region = req.body.region;
+        productosEdit[idProduct].tipo = req.body.tipo;
+        productosEdit[idProduct].altura = req.body.altura;
+        productosEdit[idProduct].crecimiento = req.body.crecimiento;
+        productosEdit[idProduct].riego = req.body.riego;
+        productosEdit[idProduct].suelo = req.body.suelo;
+        productosEdit[idProduct].clima = req.body.clima;
+        productosEdit[idProduct].luz = req.body.luz;
+        productosEdit[idProduct].fruto = req.body.fruto;
+        productosEdit[idProduct].precio = req.body.precio;
+        console.log(productosEdit);
+        console.log(req.body.nombre);
+        //console.log(productToEdit.nombre_cientifico);
+        fs.writeFileSync(productosFilePath, JSON.stringify(productosEdit, null, 2));
+        //res.send('Hello is there anybody in there ' + idProduct +' edición: ' + JSON.stringify(req.body));
+        return res.redirect('/productDetail/' + productosEdit[idProduct].id);
     },
 
     // formulario para almacenar producto nuevo
@@ -54,5 +78,6 @@ const productos2Controller = {
         res.redirect('/listProd');
     }
 }
+
 
 module.exports = productos2Controller;

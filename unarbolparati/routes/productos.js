@@ -30,11 +30,10 @@ router.post('/crear', upload.single("imagen1"), productos2Controller.almacenar);
 
 // borrar producto
 router.delete('/productDetail/:id', productos2Controller.borrar);
+
 // editar producto
 router.get('/editar/:id', productos2Controller.editar);
-router.put('/editar', function(req, res) {
-    res.send("Fui por PUT");
-});
+router.put('/editar/:id', upload.single("imagen1"), productos2Controller.guardarCambios);
 
 
 

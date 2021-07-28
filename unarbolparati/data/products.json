@@ -1,24 +1,24 @@
 [
   {
     "id": 1,
-    "nombre": "Jinicuil, cuajinicuil",
-    "nombre_cientifico": "Inga Jinicuil",
+    "nombre": "Jinicuil, otro",
+    "nombre_cientifico": "Inga",
     "region": "Sur",
     "tipo": "Perennifolio",
     "altura": "15 a 20 m",
     "crecimiento": "rápido",
     "riego": "frecuente(4-5 veces por semana)",
     "suelo": "bueno y enriquecido",
-    "clima": "húmedo",
-    "luz": "pleno sol",
+    "clima": "húmedo-editar",
+    "luz": "pleno sol-edit",
     "fruto": "comestible",
     "imagen1": "/img/inga-1.jpg",
     "imagen2": "/img/inga-2.jpg",
-    "precio": 1234
+    "precio": "777"
   },
   {
     "id": 2,
-    "nombre": "Rosa morada",
+    "nombre": "Rosa morada-editado",
     "nombre_cientifico": "Tabebuia Rosae",
     "region": "Sur",
     "tipo": "Caducifolio",
@@ -31,7 +31,7 @@
     "fruto": "no comestible",
     "imagen1": "/img/tabe-1.jpg",
     "imagen2": "/img/tabe-2.jpg",
-    "precio": 1234
+    "precio": "1234"
   },
   {
     "id": 3,
