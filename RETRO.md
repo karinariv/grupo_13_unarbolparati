@@ -22,3 +22,28 @@
 3. _Continuar haciendo_: comunicación constante.
 4. _Hacer menos_: procrastinación
 5. _Dejar de hacer_: pendientes fuera de tiempo.
+
+
+
+# La retrospectiva del 4o sprint
+### (Con el formato de boldare.com)
+
+1. Went well: 
+
+   1. Investigar para resolver los problemas que se nos presentaron.
+   2. Realizar las actividades en tiempo.
+   3. Distribuir adecuadamente las actividades.
+
+2. To improve: 
+
+   1. Terminar las actividades con mayor anticipación para poder hacer revisiones.
+   2. Llevar una mejor nomenclatura en el código para que sea más fácil de leer y corregir.
+
+3. Actions: 
+
+   1. Apoyarnos más con el uso de Trello.
+   2. Revisar el código para mejorarlo.
+   3. Revisar a consciencia todas las actividades del Sprint 5.
+   4. Repartir las tareas del Sprint 5. 
+
+   
