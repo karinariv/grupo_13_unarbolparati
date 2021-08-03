@@ -59,8 +59,8 @@ const productos2Controller = {
             clima: req.body.clima,
             luz: req.body.luz,
             fruto: req.body.fruto,
-            imagen1: '/img/products/' + req.files.imagen1.filename,
-            imagen2: '/img/products/' + req.files.imagen2.filename,
+            imagen1: '/img/products/' + req.files.imagen1[0].filename,
+            imagen2: '/img/products/' + req.files.imagen2[0].filename,
             precio: req.body.precio,
             id: getId()
         };
@@ -70,8 +70,8 @@ const productos2Controller = {
         fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, 2));
         res.redirect('/listProd');
 
-        console.log(req.body);
-        console.log(req.files);
+        //console.log(req.files.imagen1[0].filename);
+        //console.log(req.files.imagen2[0].filename);
     },
 
     borrar: (req, res) => {
