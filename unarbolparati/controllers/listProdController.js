@@ -1,11 +1,12 @@
+const path = require('path');
 
 /* Aquí importamos el JSON de listaProductos*/
 
 const fs = require('fs');
-let listProd = fs.readFileSync('./data.json', 'utf-8');
+let listProd = fs.readFileSync(path.join(__dirname, '../data/products.json'), 'utf-8');
 
 listProd = JSON.parse(listProd);
-console.log(listProd.listaProductos.length);
+//console.log(listProd.length);
 
 
 // Acá nos falta un objeto literal con las acciones para cada ruta

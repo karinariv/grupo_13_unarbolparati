@@ -11,11 +11,11 @@
         <h1 class="title-login">Árboles</p>
     </div>
     <main>
-        <% for(let i=0; i < listProd.listaProductos.length; i++) { %>    
+        <% for(let i=0; i < listProd.length; i++) { %>    
         <div class="box-product-detail">
             <div class="box-product-detail-column">
-                <div class="title-detail-product">  <%= listProd.listaProductos[i].nombre %> </div>
-                <div> <img class="img-product-detail" src= <%= listProd.listaProductos[i].imagen1 %> alt="inga-1"> </div>
+                <div class="title-detail-product">  <%= listProd[i].nombre %> </div>
+                <div> <img class="img-product-detail" src= <%= listProd[i].imagen1 %> alt="inga-1"> </div>
                 
             </div>
         </div>

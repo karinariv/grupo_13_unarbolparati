@@ -16,17 +16,18 @@ const productos2Controller = require('../controllers/productos2Controller');
 
 // haciendo uso de multer
 const storage = multer.diskStorage({
-    destination: path.join(__dirname, '../public/img'),
+    destination: path.join(__dirname, '../public/img/products'),
     filename: function (req, file, cb) {
         cb(null, file.fieldname + '-' + (Date.now()) + path.extname(file.originalname));
     }
 });
 
 const upload = multer({storage: storage});
+const uploadMultiple = upload.fields([{ name: 'imagen1', maxCount: 1}, { name: 'imagen2', maxCount: 1}]);
 
 // crear producto
 router.get('/crear', productos2Controller.crear);
-router.post('/crear', upload.single("imagen1"), productos2Controller.almacenar);
+router.post('/crear', uploadMultiple, productos2Controller.almacenar);
 
 // borrar producto
 router.delete('/productDetail/:id', productos2Controller.borrar);

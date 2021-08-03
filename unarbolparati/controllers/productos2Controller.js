@@ -59,7 +59,8 @@ const productos2Controller = {
             clima: req.body.clima,
             luz: req.body.luz,
             fruto: req.body.fruto,
-            imagen1: '/img/' + req.file.filename,
+            imagen1: '/img/products/' + req.files.imagen1.filename,
+            imagen2: '/img/products/' + req.files.imagen2.filename,
             precio: req.body.precio,
             id: getId()
         };
@@ -68,6 +69,9 @@ const productos2Controller = {
 
         fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, 2));
         res.redirect('/listProd');
+
+        console.log(req.body);
+        console.log(req.files);
     },
 
     borrar: (req, res) => {
