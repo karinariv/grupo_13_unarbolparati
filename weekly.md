@@ -39,6 +39,31 @@
 
 
 
+# Retrospectiva Semanal (5to Sprint)
+
+### Qué se hizo en la semana pasada:
+
+ - Se analizaron las consignas del Sprint.
+ - Se revisó el contenido del PlayGround para resolver las consignas.
+ - Se configuró la estructura de carpetas de usuario para el desarrollo de las consignas.
+ - Se abrió el espacio en Trello para el 5to Sprint con las consignas.
+ - Se subieron dos imágenes con Multer para los productos.
+
+### ¿Encontramos algún impedimento?
+
+ - Al intentar subir las imágenes con Multer surgieron dudas pero fueron solucionadas.
+ - Adaptar el material de PlayGround a nuestra sesión.
+
+### Qué haremos en la semana:
+
+ - Implementar el registro de usuarios.
+
+ - Implementar el login de usuarios.
+
+   
+
+
+
 
 
 
