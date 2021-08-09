@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../partials/head') %>
+    <title>Un árbol para ti - Registro de Usuario</title>
+</head>
+<body>
+    <!-- Header -->
+    <%- include('../partials/header') %>
+    <main>
+    <h1 class="title-login"> Registro de Usuario </h1>
+    <br>
+    <form action="/users/crearUsuario" method="POST" enctype="multipart/form-data">
+        <div class="login-box">
+            <br>
+            <div class="addProduct">
+                <label for="nombre" class="label"> Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required> 
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="apellido" class="label"> Apellido: </label>
+                <input type="text" name="apellido" id="apellido" required> 
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="email" class="label"> Correo electrónico:  </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="password" class="label"> Contraseña:  </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="imagenUsuario" class="label"> Cargar Imagen de Usuario: </label>
+                <input type="file" name="imagenUsuario" id="imagenUsuario" multiple required>
+            </div>
+            <br>
+            <div class="addProduct">
+                <label for="categoria" class="label"> Elegir categoría:</label>
+                <select name="categoria" id="categoria">
+                    <option value="usuario">Soy usuario</option>
+                    <option value="administrador">Soy administrador</option>
+                </select>
+            </div>
+            <br>
+            
+            <div class="addProduct"> 
+                <button type="submit" id="boton-login"> Registrarme </button>
+            </div>
+            <br>
+        </div>
+    </form>
+    </main>
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+</body>
+</html>

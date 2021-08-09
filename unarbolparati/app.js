@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mainRouter = require('./routes/mainRouter');
 const rutasProductos = require('./routes/productos');
+const rutasUsuarios = require('./routes/users')
 
 
 const path = require('path');
@@ -44,7 +45,7 @@ app.use('/listProd', mainRouter);
 
 app.use('/productos',rutasProductos); //nuevo recurso especificado en routes prouctos.js
 
-
+app.use('/users', rutasUsuarios);
 
 
 

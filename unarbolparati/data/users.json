@@ -1,49 +1,74 @@
-{
-	"users": [
-		{
-			"id": 1,
-			"firstName": "Karina",
-			"lastName": "Rivera",	
-			"email": "karina@gmail.com",
-			"password": "1234",
-			"image": "/img/users/user1.jpg",
-			"admin": true
-		},
-		{
-			"id": 2,
-			"firstName": "Daniel",
-			"lastName": "Mendoza",	
-			"email": "daniel@gmail.com",
-			"password": "1234",
-			"image": "/img/users/user2.jpg",
-			"admin": true
-		},
-        {
-            "id": 3,
-			"firstName": "Juan",
-			"lastName": "Lopez",	
-			"email": "userJuan@gmail.com",
-			"password": "0000",
-			"image": "/img/users/user.png",
-			"admin": false
-        },
-        {
-            "id": 4,
-			"firstName": "Ana",
-			"lastName": "Delgado",	
-			"email": "userAna@gmail.com",
-			"password": "0000",
-			"image": "/img/users/user.png",
-			"admin": false
-        },
-        {
-            "id": 5,
-			"firstName": "Teresa",
-			"lastName": "Juarez",	
-			"email": "userTeresa@gmail.com",
-			"password": "0000",
-			"image": "/img/users/user.png",
-			"admin": false
-        }
-	]
-}
+[
+  {
+    "id": 1,
+    "firstName": "Karina",
+    "lastName": "Rivera",
+    "email": "karina@gmail.com",
+    "password": "1234",
+    "image": "/img/users/user1.jpg",
+    "category": "administrador"
+  },
+  {
+    "id": 2,
+    "firstName": "Daniel",
+    "lastName": "Mendoza",
+    "email": "daniel@gmail.com",
+    "password": "1234",
+    "image": "/img/users/user2.jpg",
+    "category": "administrador"
+  },
+  {
+    "id": 3,
+    "firstName": "Juan",
+    "lastName": "Lopez",
+    "email": "userJuan@gmail.com",
+    "password": "0000",
+    "image": "/img/users/user.png",
+    "category": "usuario"
+  },
+  {
+    "id": 4,
+    "firstName": "Ana",
+    "lastName": "Delgado",
+    "email": "userAna@gmail.com",
+    "password": "0000",
+    "image": "/img/users/user.png",
+    "category": "usuario"
+  },
+  {
+    "id": 5,
+    "firstName": "Teresa",
+    "lastName": "Juarez",
+    "email": "userTeresa@gmail.com",
+    "password": "0000",
+    "image": "/img/users/user.png",
+    "category": "usuario"
+  },
+  {
+    "id": 6,
+    "firstName": "Irma",
+    "lastName": "Pérez",
+    "email": "userIrma@gmail.com",
+    "password": "soyIrma",
+    "image": "/img/users/imagenUsuario-1628550225998.png",
+    "category": "usuario"
+  },
+  {
+    "id": "947c9152-f325-4397-8bec-60cb73e34bda",
+    "firstName": "Josefa",
+    "lastName": "Lino",
+    "email": "userJosefa@gmail.com",
+    "password": "$2a$10$Q9uZST3oBh3XpWyTCOhM2e6CWtSAWJzqow48WPxO/herppQUhUJFi",
+    "image": "/img/users/imagenUsuario-1628551099265.png",
+    "category": "usuario"
+  },
+  {
+    "id": "5157c477-c32b-41c3-99a5-b9708c042718",
+    "firstName": "Carlos",
+    "lastName": "Peña",
+    "email": "userCarlos@gmail.com",
+    "password": "$2a$10$soHCO/N9Gh5qk9qA1STJU.mB1eZgw.BqhDygrUA2LamHc02g3n3qi",
+    "image": "/img/users/imagenUsuario-1628552146932.png",
+    "category": "usuario"
+  }
+]
