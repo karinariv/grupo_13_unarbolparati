@@ -4,9 +4,6 @@ const controlador = {
     index: (req, res) => {
         res.render('index', {dataArboles: dataArboles});
     },
-    login: (req, res) => {
-        res.render('./users/login');
-    },
     productCart: (req, res) => {
         res.render('productCart', {dataArboles: dataArboles});
     },

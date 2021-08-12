@@ -3,6 +3,7 @@ const app = express();
 const mainRouter = require('./routes/mainRouter');
 const rutasProductos = require('./routes/productos');
 const rutasUsuarios = require('./routes/users')
+const session = require('express-session')
 
 
 const path = require('path');
@@ -25,9 +26,12 @@ app.listen(3030, () => {
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
+// Para usar express-session
+app.use(session({secret:"secret-Tree-4u", resave: true, saveUninitialized:true}));
+
 app.use('/', mainRouter);
 
-app.use('/login', mainRouter);
+app.use('/login', rutasUsuarios);
 
 app.use('/productCart', mainRouter);
 

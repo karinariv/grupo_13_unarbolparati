@@ -8,7 +8,6 @@ const prodDetailController = require('../controllers/prodDetailController');
 // Acá definimos las rutas
 router.get('/', mainController.index);
 
-router.get('/login', mainController.login);
 
 router.get('/productCart', mainController.productCart);
 

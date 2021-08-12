@@ -18,6 +18,9 @@ const upload = multer({storage: storage});
 router.get('/crearUsuario', usersController.crear);
 router.post('/crearUsuario', upload.single('imagenUsuario'), usersController.almacenar);
 
+//para el login
+router.get('/', usersController.login);
+
 
 // esportando el módulo router
 module.exports = router;

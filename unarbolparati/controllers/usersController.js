@@ -28,6 +28,10 @@ const usersController = {
 
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
         res.send("Usuario registrado satisfactoriamente.")
+    },
+
+    login: (req, res) => {
+        return res.render('users/login');
     }
 }
 
