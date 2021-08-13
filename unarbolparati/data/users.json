@@ -70,5 +70,14 @@
     "password": "$2a$10$soHCO/N9Gh5qk9qA1STJU.mB1eZgw.BqhDygrUA2LamHc02g3n3qi",
     "image": "/img/users/imagenUsuario-1628552146932.png",
     "category": "usuario"
+  },
+  {
+    "id": "06738782-f6b8-4304-869d-33aa4dd46394",
+    "firstName": "Cosme",
+    "lastName": "Fulanito",
+    "email": "c_fulanito_1234@gmail.com",
+    "password": "$2a$10$wVt.ABOqkn44Cfedi99JcufszlfgDD0ejhyJHDbm2QErBURLr8jte",
+    "image": "/img/users/imagenUsuario-1628897284233.jpg",
+    "category": "usuario"
   }
 ]

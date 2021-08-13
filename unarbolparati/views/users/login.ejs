@@ -10,11 +10,21 @@
     <main>
     <h1 class="title-login"> Acceso </h1>
     <br>
+    <% if (typeof errors != 'undefined') { %>
+        <p style="color: red">ERROR</p>
+        <ul>
+            <% for (let i=0; i < errors.length; i++) { %>
+                <li>
+                    <%=errors[i].msg%>
+                </li>
+            <% } %>
+        </ul>
+    <% } %>
     <form action="/login" method="POST">
         <div class="login-box">
             <br><div class="login">
                 <label for="correo" class="label"> Correo:  </label>
-                <input type="email" name="correo" id="correo"> 
+                <input type="email" name="email" id="correo"> 
             </div>
             <br>
             <div class="login">
