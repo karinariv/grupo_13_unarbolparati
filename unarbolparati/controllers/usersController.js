@@ -8,6 +8,7 @@ const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 //para validator
 const { validationResult } = require('express-validator');
+const session = require('express-session');
 
 const usersController = {
     crear: (req, res) => {
@@ -45,10 +46,11 @@ const usersController = {
             } else {
                 users2 = users;
             }
+            let usuarioALoguearse;
             for (let i=0; i < users2.length; i++) {
                 if (users2[i].email == req.body.email) {
                     if (bcrypt.compareSync(req.body.password, users2[i].password)) {
-                        let usuarioALoguearse = users2[i];
+                         usuarioALoguearse = users2[i];
                         break;
                     }
                 }                
@@ -60,7 +62,9 @@ const usersController = {
             }
 
             req.session.usuarioLogueado = usuarioALoguearse;
-            res.render('Success');
+            res.render('users/welcome');
+            console.log(req.session.usuarioLogueado);
+            
         } else {
             return res.render('users/login', {errors: errors.errors});
         }
@@ -68,6 +72,13 @@ const usersController = {
         /*if (!errores.isEmpty()) {
             return res.render('users/login', { mensajesDeError: errores.mapped()});
         }*/
+    },
+    welcome: (req, res) => {
+        if (req.session.usuarioLogueado == undefined) {
+            res.send('No estás logueado');
+        } else {
+            res.render('users/welcome')
+        }
     }
 }
 

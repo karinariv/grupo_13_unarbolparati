@@ -33,6 +33,8 @@ app.use('/', mainRouter);
 
 app.use('/login', rutasUsuarios);
 
+app.use('/welcome', rutasUsuarios);
+
 app.use('/productCart', mainRouter);
 
 app.use('/productDetail', mainRouter);

@@ -4,7 +4,8 @@ const router = express.Router();
 const { body } = require('express-validator');
 const path = require('path');
 const multer = require('multer');
-const usersController = require('../controllers/usersController')
+const usersController = require('../controllers/usersController');
+const session = require('express-session');
 
 // Para el uso de multer
 const storage = multer.diskStorage({
@@ -18,7 +19,7 @@ const upload = multer({storage: storage});
 
 //validaciones para el login
 const validateLogin = [
-    body('correo').isEmail().withMessage('Debes anotar tu correo con el que te registraste'),
+    body('email').notEmpty().withMessage('Debesssss anotar tu correo con el que te Registraste'),
     body('password').notEmpty().withMessage('Debes anotar tu contraseña')
 ];
 
@@ -29,6 +30,10 @@ router.post('/crearUsuario', upload.single('imagenUsuario'), usersController.alm
 //para el login
 router.get('/', usersController.login);
 router.post('/', validateLogin, usersController.procesoLogin);
+
+//para la bienvenida
+router.get('/welcome', usersController.welcome);
+
 
 
 // esportando el módulo router
