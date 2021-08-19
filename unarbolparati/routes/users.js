@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+//importando middleware de usuario
+const usersMiddleware = require('../middlewares/usersMiddleware');
 // para usar express-validator en sección de rutas
 const { body } = require('express-validator');
 const path = require('path');
@@ -28,7 +30,7 @@ router.get('/crearUsuario', usersController.crear);
 router.post('/crearUsuario', upload.single('imagenUsuario'), usersController.almacenar);
 
 //para el login
-router.get('/', usersController.login);
+router.get('/', usersMiddleware, usersController.login);
 router.post('/', validateLogin, usersController.procesoLogin);
 
 //para la bienvenida

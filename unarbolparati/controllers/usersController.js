@@ -62,8 +62,9 @@ const usersController = {
             }
 
             req.session.usuarioLogueado = usuarioALoguearse;
-            res.render('users/welcome');
-            console.log(req.session.usuarioLogueado);
+            usuario = req.session.usuarioLogueado;
+            res.render('users/welcome', {usuario: usuario});
+            //console.log(req.session.usuarioLogueado);
             
         } else {
             return res.render('users/login', {errors: errors.errors});

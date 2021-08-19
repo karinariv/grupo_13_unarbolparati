@@ -1,5 +1,8 @@
 const express = require('express');
 const router = express.Router();
+// Importando middleware para huespedes (para productCart)
+const huespedesMiddleware = require('../middlewares/huespedesMiddleware');
+
 // Acá nos falta traer el controller
 const mainController = require('../controllers/mainController');
 const listProdController = require('../controllers/listProdController');
@@ -9,7 +12,7 @@ const prodDetailController = require('../controllers/prodDetailController');
 router.get('/', mainController.index);
 
 
-router.get('/productCart', mainController.productCart);
+router.get('/productCart', huespedesMiddleware, mainController.productCart);
 
 router.get('/productDetail/:id', prodDetailController.productDetail);
 
