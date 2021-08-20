@@ -60,6 +60,28 @@
 
  - Implementar el login de usuarios.
 
+### Qué se hizo en la semana pasada:
+
+ - Se implementó el formulario de registro de usuario/administrador.
+ - Se implementó el formulario de login.
+ - Se implementó el express-validator y bcryptjs.
+ - Se ajustaron las rutas.
+ - Se implementaron las rutas a las que puede acceder usuarios y huéspedes.
+
+### ¿Encontramos algún impedimento?
+
+ - Se duplicó la carpeta node_modules pero se solucionó.
+ - El proceso implementado para comparar con la base de datos no funcionaba pero se resolvió.
+ - La variable session no persisitía a través de las vistas, pero se solicionó.
+
+### Qué haremos en la semana:
+
+ - Comenzar con el nuevo Sprint.
+
+   
+   
+   
+   
    
 
 
