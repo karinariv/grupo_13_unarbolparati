@@ -6,32 +6,134 @@
 /* Los estilos para el header y el footer serán iguales a los estilos planteados en la vista de productCart.html*/
 /* Main*/
 
-.box-region{
-    display: flex;
-    width: 50%;
-    flex-direction:row;
-    justify-content: space-around;
-    font-family: 'Montserrat', sans-serif;
-    align-items: flex-start;
+/* Comencemos por el slider */
 
+.contenedor-carrusel {
+    margin: auto;
+    background-color: rgba(192,192,192,0.4);
+    width: 90%;
+    padding: 16px;
 }
-.box-map{
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+ul.slider li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* display: block; */
+}
+
+/* ul.slider li img #slide1 {
+    display: block;
+} */
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: black;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    border-radius: 100%;
+}
+
+/* Fin de estilos slider*/
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #01937C;
+    text-align: center;
+}
+
+article a{
+    color:#01937C;
+    text-decoration: none;
+}
+
+article {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.container:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.info1, .info2 {
     display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content:center;
-    align-items: right;
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    right: 120px;
-    bottom: -510px;
+    justify-content: space-around;
+    align-items: center;
 }
-.title-box-map {
-    display:flex;
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    right: 120px;
-    bottom: 20px;
+
+.productoX:hover .container{
+    background-color:rgba(128, 128, 128, .4);
+    color: #000;
+    font-weight: bold;
+}
+
+.productoX {
+    border-radius: 8%;
+    border: #01937C solid 2px;
+}
+
+.productoX:hover {
+    border: none;
+}
+
+.productoXimg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.productoXimg img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.space {
+    padding: 2%;
 }
 
 /*Sección de estilos para la vista de register*/
@@ -100,52 +202,12 @@ display: flex;
     width: 40px;
 }
 
-.carrusel {
-    background-color: #FFF;
-    width: 95%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 15%;
-}
-
-.carrusel .slider {
-    background-color: rgba(192,192,192,0.3);
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: flex-start;
-    overflow-x: auto;
-    border-radius: 15%;
-
-    -webkit-overflow-scrolling: touch;
-}
-
-.carrusel .slide {
-    width: 70%;
-    flex-shrink: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrusel .slide img {
-    height: 90%;
-    width: auto;
-    border-radius: 25%;
-}
-
-.contenedor-carrusel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .header-bottom-productCart {
     background-color: #9FE6A0;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-bottom-productCart h1 {
@@ -414,17 +476,25 @@ display: flex;
 
 @media (min-width: 460px) {
 
+    /* Estilos para index en tablet */
 
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .space {
+        width: 50%;
+    }
 
     /* Estilos para productCart.html en tablet*/
     
     /* Header */
     .burger-menu {
         display: none;
-    }
-
-    .carrusel .slide {
-        width: 45%;
     }
 
     .header-top-productCart {
@@ -541,14 +611,15 @@ display: flex;
 
 @media (min-width: 768px) {
 
+    /* Estilos para index en laptop */
 
+    .space {
+        width: 25%;
+    }
 
     /* Estilos para productCart.html en laptop */
 
     /* Header */
-    .carrusel .slide {
-        width: 20%;
-    }
 
     .logo-productCart {
         width: 30%;
