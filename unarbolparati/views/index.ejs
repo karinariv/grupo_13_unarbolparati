@@ -10,33 +10,40 @@
     <!-- Main -->
     <main>
         <div class="header-bottom-productCart">
-            <h2>Nuestros productos</h2>
+            <h2>Conoce la variedad de árboles mexicanos</h2>
             <%- include('./partials/slider') %>
         </div>
-        <div class="box-region">
-        <h3><a href="#">Región norte</a></h3>
-        </div>
-        <div class="box-region">
-        <img src="/img/region_norte.jpg" alt="region_norte">
-        </div>
-        <div class="box-region">
-        <h3><a href="#">Región centro</a></h3>
-        </div>
-        <div class="box-region">
-        <img src="/img/region_centro.jpg" alt="region_centro">
-        </div>
-        <div class="box-region">
-        <h3><a href="#">Región sur</a></h3>
-        </div>
-        <div class="box-region">
-        <img src="/img/region_sur.jpg" alt="region_sur"> 
-        </div>           
-        <div class="title-box-map">
-            <h3>¡Encuentra tu árbol!</h3>
-        </div>
-        <div class="box-map">
-            <img src="/img/P_M.jpg" alt="pais">
-        </div>
+        <section>
+            <div class="subtitle">
+                <h3>¡Encuentra tu árbol!</h3>
+                <h2>Nuestros productos</h2>
+            </div>
+            <article>
+                <% for(let i=0; i < dataArboles.length; i++) { %>
+                    <div class="space">
+                        <div class="productoX">
+                            <a href="/productDetail/<%=dataArboles[i].id%>">
+                                <div class="container">
+                                    <div class="productoXimg">
+                                        <img src="<%=dataArboles[i].imagen1%>" alt="imagen-producto">
+                                    </div>
+                                    <div class="detail-box">
+                                        <div class="info1">
+                                            <div class="name"><%=dataArboles[i].nombre%></div>
+                                            <div class="region"><%=dataArboles[i].region%></div>
+                                        </div>
+                                        <div class="info2">
+                                            <div class="price">$<%=dataArboles[i].precio%></div>
+                                            <div class="addCart"><a href="/productCart">Lo quiero  <i class="fas fa-cart-plus"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <% } %>
+            </article>
+        </section>
     </main>
     <!-- Footer -->
     <%- include('./partials/footer') %>
