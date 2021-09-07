@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
     alias = 'ImageProduct';
     cols = {
-        id_images_products: {
+        id_image_product: {
             type: dataTypes.STRING,
             primaryKey: true,
             allowNull: false
@@ -23,7 +23,7 @@ module.exports = (sequelize, dataTypes) => {
     ImageProduct.associate = function(models) {
         ImageProduct.belongsTo(models.Product, {
             as: "products",
-            foreignKey: "id_products"
+            foreignKey: "id_product"
         });
     }
 

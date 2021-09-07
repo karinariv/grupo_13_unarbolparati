@@ -1,7 +1,7 @@
 module.exports = (sequelize, dataTypes) => {
-    alias = 'Users';
+    alias = 'User';
     cols = {
-        id_users: {
+        id_user: {
             type: dataTypes.STRING,
             primaryKey: true,
             allowNull: false
@@ -30,13 +30,13 @@ module.exports = (sequelize, dataTypes) => {
     User.associate = function(models) {
         User.hasMany(models.ImageUser, {
             as: "images_users",
-            foreignKey: "id_users"
+            foreignKey: "id_user"
         });
         User.belongsToMany(models.Product, {
             as: "products",
             through: "products_users",
-            foreignKey: "id_users",
-            otherKey: "id_products",
+            foreignKey: "id_user",
+            otherKey: "id_product",
             timestamps: false
         });
     }
