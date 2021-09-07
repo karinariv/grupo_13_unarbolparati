@@ -18,7 +18,6 @@ module.exports = (sequelize, dataTypes) => {
         password: {
             type: dataTypes.STRING
         },
-        
         category: {
             type: dataTypes.STRING
         }
@@ -27,9 +26,7 @@ module.exports = (sequelize, dataTypes) => {
         tableName = 'users',
         timestamps = false
     }
-    
     const User = sequelize.define(alias, cols, config);
-
     User.associate = function(models) {
         User.hasMany(models.ImageUser, {
             as: "images_users",
@@ -43,6 +40,5 @@ module.exports = (sequelize, dataTypes) => {
             timestamps: false
         });
     }
-
     return User;
 }

@@ -80,6 +80,11 @@ const usersController = {
         } else {
             res.render('users/welcome')
         }
+    },
+    cerrarSesion: (req, res) => {
+        req.session.destroy((err) => {
+            res.render('users/login');
+          })
     }
 }
 

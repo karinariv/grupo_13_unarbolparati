@@ -36,6 +36,8 @@ router.post('/', validateLogin, usersController.procesoLogin);
 //para la bienvenida
 router.get('/welcome', usersController.welcome);
 
+//para cerrar la sesión
+router.get('/cerrar', usersController.cerrarSesion);
 
 
 // esportando el módulo router

@@ -50,9 +50,7 @@ module.exports = (sequelize, dataTypes) => {
         tableName = 'products',
         timestamps = false
     }
-    
     const Product = sequelize.define(alias, cols, config);
-
     Product.associate = function(models) {
         Product.hasMany(models.ImageProduct, {
             as: "images_products",
@@ -66,6 +64,5 @@ module.exports = (sequelize, dataTypes) => {
             timestamps: false
         });
     }
-
     return Product;
 }
