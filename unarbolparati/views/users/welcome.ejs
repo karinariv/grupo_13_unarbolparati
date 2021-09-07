@@ -8,9 +8,13 @@
     <!-- Header -->
     <%- include('../partials/header') %>
     <main>
-    <h1 class="title-login"> Bienvenid@ <%= usuario.firstName %> <%= usuario.lastName %> </h1>
-    <br>
-    
+        <h1 class="title-login"> Bienvenid@ </h1>
+        <h1 class="title-login"><%= usuario.firstName %> <%= usuario.lastName %></h1>
+        <div class="contiene">
+            <img class="image-user" src="<%=usuario.image%>" alt="Imagen de usuario">
+        </div>
+        <h3><a href="/users/cerrar">Cerrar sesión</a></h3>
+        <br>
     </main>
     <!-- Footer -->
     <%- include('../partials/footer') %>

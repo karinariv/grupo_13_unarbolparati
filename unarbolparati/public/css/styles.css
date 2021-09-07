@@ -268,6 +268,20 @@ display: flex;
     color: black;
 }
 
+.fa-search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search {
+    display: flex;
+}
+
 /* Main */
 .article-productCart {
     background-color: white;
@@ -470,6 +484,18 @@ display: flex;
     margin-bottom: 1rem;
     text-decoration: none;
     padding: 10px;
+}
+
+/* Estilos vista users/welcome */
+.contiene {
+    height: 120px;
+    width: 120px;
+}
+
+.image-user {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
 }
 
 /* Contenido para tablet */

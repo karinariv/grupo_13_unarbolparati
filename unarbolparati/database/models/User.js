@@ -18,9 +18,6 @@ module.exports = (sequelize, dataTypes) => {
         password: {
             type: dataTypes.STRING
         },
-        image: {
-            type: dataTypes.BLOB
-        },
         category: {
             type: dataTypes.STRING
         }
@@ -29,7 +26,19 @@ module.exports = (sequelize, dataTypes) => {
         tableName = 'users',
         timestamps = false
     }
-    
     const User = sequelize.define(alias, cols, config);
+    User.associate = function(models) {
+        User.hasMany(models.ImageUser, {
+            as: "images_users",
+            foreignKey: "id_users"
+        });
+        User.belongsToMany(models.Product, {
+            as: "products",
+            through: "products_users",
+            foreignKey: "id_users",
+            otherKey: "id_products",
+            timestamps: false
+        });
+    }
     return User;
 }
