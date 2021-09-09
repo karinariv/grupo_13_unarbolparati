@@ -1,15 +1,21 @@
 // Controlador ProdDetail
 
-const dataArboles = require('../data/products.json');
+const db = require('../database/models');
+
+// const dataArboles = require('../data/products.json');
 
 const prodDetailController = {
     productDetail: (req, res) => {
-        let idProducto = req.params.id;
+        db.Product.findByPk(req.params.id)
+            .then(function(listaProductos){
+                res.render('./products/productDetail', {listaProductos: listaProductos});
+            });
+        /* let idProducto = req.params.id;
         for (let listaProductos of dataArboles) {
             if (listaProductos.id == idProducto) {
                 res.render('./products/productDetail', {listaProductos: listaProductos});
             }
-        }
+        } */
     }
 }
 

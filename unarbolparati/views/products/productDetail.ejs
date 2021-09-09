@@ -17,7 +17,7 @@
                 <div> <img class="img-product-detail" src="<%=listaProductos.imagen1%>" alt="imagen-producto"> </div>
                 <div> <img class="img-product-detail" src="<%= listaProductos.imagen2 %>" alt="imagen-producto"> </div>
                 <div class="precio-carrito">  <strong> $ <%= listaProductos.precio %> </strong> </div>
-                <div class="precio-carrito">Agregar carrito <a href=""><i class="fas fa-cart-plus" id="carrito"></i></a> </div>
+                <div class="precio-carrito"><a href="/productCart">Agregar al carrito<i class="fas fa-cart-plus" id="carrito"></i></a> </div>
             </div>
             <div class="box-product-detail-column">
                 <div class="title-detail-product"> Región <%= listaProductos.region %> </div>
@@ -35,10 +35,13 @@
                         <li> <strong>Luz necesaria:</strong> <%= listaProductos.luz %> </li>
                         <li> <strong>Fruto:</strong> <%= listaProductos.fruto %> </li>
                     </ul>
-                    <a href="" class="detail" id="action-button-">EDITAR</a>
-                    <form action="/productos/productDetail/<%=listaProductos.id%>?_method=DELETE" method="POST">
-                        <button type="submit" class="detail" id="action-button-">BORRAR</button>
-                    </form>
+                    <br>
+                    <div class="contiene-botones">
+                        <a href="../productos/editar/<%=listaProductos.id_product%>" class="detail" id="action-button">EDITAR</a>
+                        <form action="/productos/productDetail/<%=listaProductos.id_product%>?_method=DELETE" method="POST">
+                            <button type="submit" class="detail" id="action-button-">BORRAR</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

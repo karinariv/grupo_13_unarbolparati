@@ -498,6 +498,31 @@ display: flex;
     border-radius: 50%;
 }
 
+/* Estilos listProd */
+
+.precio-carrito a {
+    text-decoration: none;
+    color: #01937C;
+}
+
+/* Estilos productDetail */
+#action-button {
+    text-decoration: none;
+    background-color: gainsboro;
+    color: black;
+    padding: 5px;
+    border-radius: 10%;
+    border: black;
+}
+#action-button:hover {
+    background-color: gray;
+}
+
+.contiene-botones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Contenido para tablet */
 
 @media (min-width: 460px) {

@@ -18,7 +18,7 @@ const usersController = {
     almacenar: (req, res) => {
         
         let nuevoUsuario = {
-            id: getIdUsuario(),
+            id_user: getIdUsuario(),
             firstName: req.body.nombre,
             lastName: req.body.apellido,
             email: req.body.email,

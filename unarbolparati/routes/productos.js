@@ -4,7 +4,7 @@ const path = require('path');
 const multer = require('multer');
 const listProdController = require('../controllers/listProdController');
 
-router.get('/', listProdController.simplyProducts);
+//router.get('/', listProdController.simplyProducts);
 
 router.get('/detalle/:id', (req, res) => {
     res.send('Detalle del producto ' + req.params.id )
@@ -29,14 +29,12 @@ const uploadMultiple = upload.fields([{ name: 'imagen1', maxCount: 1}, { name: '
 router.get('/crear', productos2Controller.crear);
 router.post('/crear', uploadMultiple, productos2Controller.almacenar);
 
-// borrar producto
-router.delete('/productDetail/:id', productos2Controller.borrar);
-
 // editar producto
 router.get('/editar/:id', productos2Controller.editar);
-router.put('/editar/:id', upload.single("imagen1"), productos2Controller.guardarCambios);
+router.put('/editar/:id', uploadMultiple, productos2Controller.guardarCambios);
 
-
+// borrar producto
+router.delete('/productDetail/:id', productos2Controller.borrar);
 
 
 

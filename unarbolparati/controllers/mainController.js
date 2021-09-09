@@ -1,11 +1,16 @@
-const dataArboles = require('../data/products.json');
+// const dataArboles = require('../data/products.json');
+const db = require('../database/models');
 
 const controlador = {
     index: (req, res) => {
-        res.render('index', {dataArboles: dataArboles});
+        db.Product.findAll()
+            .then(function(dataArboles){
+                res.render('index', {dataArboles: dataArboles});
+            });
+        
     },
     productCart: (req, res) => {
-        res.render('productCart', {dataArboles: dataArboles});
+        res.render('productCart');
     },
     register: (req, res) => {
         res.render('./users/register');

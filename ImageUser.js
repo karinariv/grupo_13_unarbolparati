@@ -1,4 +1,4 @@
-module.exports = (sequelize, dataTypes) => {
+/* module.exports = (sequelize, dataTypes) => {
     alias = 'ImageUser';
     cols = {
         id_image_user: {
@@ -28,4 +28,4 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     return ImageUser;
-}
+} */

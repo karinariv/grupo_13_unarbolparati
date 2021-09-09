@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
-    alias = 'Product';
-    cols = {
+    let alias = 'Product';
+    let cols = {
         id_product: {
             type: dataTypes.STRING,
             primaryKey: true,
@@ -43,15 +43,21 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING
         },
         precio: {
-            type: dataTypes.FLOAT
+            type: dataTypes.DECIMAL
+        },
+        imagen1: {
+            type: dataTypes.STRING
+        },
+        imagen2: {
+            type: dataTypes.STRING
         }
     }
-    config = {
-        tableName = 'products',
-        timestamps = false
+    let config = {
+        tableName: 'products',
+        timestamps: false
     }
     const Product = sequelize.define(alias, cols, config);
-    Product.associate = function(models) {
+    /* Product.associate = function(models) {
         Product.hasMany(models.ImageProduct, {
             as: "images_products",
             foreignKey: "id_product"
@@ -63,6 +69,6 @@ module.exports = (sequelize, dataTypes) => {
             otherKey: "id_user",
             timestamps: false
         });
-    }
+    } */
     return Product;
 }
