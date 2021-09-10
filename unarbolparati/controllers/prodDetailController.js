@@ -8,7 +8,7 @@ const prodDetailController = {
     productDetail: (req, res) => {
         db.Product.findByPk(req.params.id)
             .then(function(listaProductos){
-                res.render('./products/productDetail', {listaProductos: listaProductos});
+                res.render('products/productDetail', {listaProductos: listaProductos});
             });
         /* let idProducto = req.params.id;
         for (let listaProductos of dataArboles) {

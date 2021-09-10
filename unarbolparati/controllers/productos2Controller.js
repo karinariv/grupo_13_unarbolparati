@@ -28,8 +28,7 @@ const productos2Controller = {
 
     // formulario para guardar cambios de edición
     guardarCambios: (req, res) => {
-        let listaProducto = db.Product.findByPk(req.params.id)
-        let promesa2 = db.Product.update({
+        db.Product.update({
             nombre: req.body.nombre,
             nombre_cientifico: req.body.nombre_cientifico,
             region: req.body.region,
@@ -44,23 +43,14 @@ const productos2Controller = {
             imagen1: '/img/products/' + req.files.imagen1[0].filename,
             imagen2: '/img/products/' + req.files.imagen2[0].filename,
             precio: req.body.precio,
-            id_product: getId()
+            //id_product: getId()
         }, {
             where: {id_product: req.params.id}
         })
-        
-        //console.log('Las promesas se han definido')
-        let listaProductos;
-        Promise.all([listaProducto, promesa2])
-            .then(function([listaProducto, promesa2]){
-                //console.log('las promesas se cumplieron')
-                return listaProducto;
-            })
-            .then(function(listaProducto){
-                listaProductos = listaProducto;
-                return res.render(path.resolve(__dirname, '..', 'views/products',  'productDetail'), {listaProductos: listaProductos})
-            })
-        
+
+        .then(function(){
+            res.redirect('../../productDetail/'+req.params.id);
+        })
         
         
             
