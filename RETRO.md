@@ -49,9 +49,28 @@
 # La retrospectiva del 5o sprint
 
 1. _Comenzar a hacer_: analizar el sexto sprint y organizar las actividades con sus respectivos tiempos e iniciar el tablero de Trello.
+
 2. _Hacer más_: revisar con mayor antelación el material del Playground para que cuando se analice se tenga una mejor idea de lo que hay que realizar. Investigar en otras fuentes como complemento para mejorar la realización de las consignas, para solventar la posibles dificultades. Incrementar comunicación con los profesores.
+
 3. _Continuar haciendo_: comunicación constante.
+
 4. _Hacer menos_: procrastinación
+
 5. _Dejar de hacer_: pendientes fuera de tiempo.
 
+
+# La retrospectiva del 6o sprint
+
+1. _Comenzar a hacer_: analizar el séptimo sprint y organizar las actividades con sus respectivos tiempos e iniciar el tablero de Trello. Terminar de definir el modelo de la base de datos.
+
+2. _Hacer más_: revisar con mayor antelación el material del Playground para que cuando se analice se tenga una mejor idea de lo que hay que realizar. Investigar en otras fuentes como complemento para mejorar la realización de las consignas, para solventar la posibles dificultades. Incrementar comunicación con los profesores más.
+
+3. _Continuar haciendo_: comunicación constante.
+
+4. _Hacer menos_: procrastinación
+
+5. _Dejar de hacer_: pendientes fuera de tiempo.
+
+   
+   
    
