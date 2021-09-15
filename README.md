@@ -46,13 +46,5 @@ Está página nos agradó mucho porque presentan una idea de negocio muy similar
 Está página nos gusto por la forma dinámica en la que presentan sus elementos como menús, etiquetas, imágenes.
 
 
-## Enlaces a los Tableros de Trello
-_sprint 1_: https://trello.com/b/r5zPYdMG/proyecto-digital-house-sprint-1
-
-_sprint 2_: https://trello.com/b/17SEzlWX/proyecto-digital-house-sprint-2
-
-_sprint 3_: https://trello.com/b/aMeHWXa6/sprint-3-digital-house
-
-_sprint 4_: https://trello.com/b/Kvu5UiyW/sprint-4-digital-house
-
-_sprint 5_: https://trello.com/b/KD9OBeoc/sprint-5-digital-house
+## Enlaces al Tablero de Trello
+https://trello.com/b/LU3pyh1U/sprint-6-digital-house
