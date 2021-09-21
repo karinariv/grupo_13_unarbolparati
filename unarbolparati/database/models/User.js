@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
-    alias = 'User';
-    cols = {
+    let alias = 'User';
+    let cols = {
         id_user: {
             type: dataTypes.STRING,
             primaryKey: true,
@@ -18,16 +18,19 @@ module.exports = (sequelize, dataTypes) => {
         password: {
             type: dataTypes.STRING
         },
+        image: {
+            type: dataTypes.STRING
+        },
         category: {
             type: dataTypes.STRING
         }
     }
-    config = {
-        tableName = 'users',
-        timestamps = false
+    let config = {
+        tableName: 'users',
+        timestamps: false
     }
     const User = sequelize.define(alias, cols, config);
-    User.associate = function(models) {
+    /* User.associate = function(models) {
         User.hasMany(models.ImageUser, {
             as: "images_users",
             foreignKey: "id_user"
@@ -39,6 +42,6 @@ module.exports = (sequelize, dataTypes) => {
             otherKey: "id_product",
             timestamps: false
         });
-    }
+    } */
     return User;
 }

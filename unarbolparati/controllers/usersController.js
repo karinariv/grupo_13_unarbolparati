@@ -3,9 +3,10 @@ const path = require('path');
 const { v4: getIdUsuario} = require('uuid');
 getIdUsuario();
 const bcrypt = require('bcryptjs');
+const db = require('../database/models');
 
-const usersFilePath = path.join(__dirname, '../data/users.json');
-const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+//const usersFilePath = path.join(__dirname, '../data/users.json');
+//const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 //para validator
 const { validationResult } = require('express-validator');
 const session = require('express-session');
@@ -17,20 +18,20 @@ const usersController = {
 
     almacenar: (req, res) => {
         
-        let nuevoUsuario = {
-            id: getIdUsuario(),
+        db.User.create({
+            id_user: getIdUsuario(),
             firstName: req.body.nombre,
             lastName: req.body.apellido,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
             image: '/img/users/' + req.file.filename,
             category: req.body.categoria
-        }
+        })
 
-        users.push(nuevoUsuario);
+        //users.push(nuevoUsuario);
 
-        fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
-        res.send("Usuario registrado satisfactoriamente.")
+        //fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
+        res.render('users/userRegistered');
     },
 
     login: (req, res) => {
@@ -38,10 +39,12 @@ const usersController = {
     },
 
     procesoLogin: (req, res) => {
-        let errors = validationResult(req);
+        db.User.findAll()
+        .then(function(users){
+            let errors = validationResult(req);
         if (errors.isEmpty()) {
             let users2;
-            if (JSON.stringify(users) =="") {
+            if (users =="") {
                 users2 = [];
             } else {
                 users2 = users;
@@ -69,6 +72,8 @@ const usersController = {
         } else {
             return res.render('users/login', {errors: errors.errors});
         }
+        });
+        
         //res.send(errores);
         /*if (!errores.isEmpty()) {
             return res.render('users/login', { mensajesDeError: errores.mapped()});
