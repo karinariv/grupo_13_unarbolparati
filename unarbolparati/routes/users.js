@@ -25,9 +25,13 @@ const validateLogin = [
     body('password').notEmpty().withMessage('Debes anotar tu contraseña')
 ];
 
+const validateSignup = [
+    body('email').isEmail()
+];
+
 // rutas para crear usuario
 router.get('/crearUsuario', usersController.crear);
-router.post('/crearUsuario', upload.single('imagenUsuario'), usersController.almacenar);
+router.post('/crearUsuario', [validateSignup, upload.single('imagenUsuario')], usersController.almacenar);
 
 //para el login
 router.get('/', usersMiddleware, usersController.login);
