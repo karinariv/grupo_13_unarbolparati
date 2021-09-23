@@ -21,7 +21,7 @@ const upload = multer({storage: storage});
 
 //validaciones para el login
 const validateLogin = [
-    body('email').notEmpty().withMessage('Debes anotar tu correo con el que te registraste').cdisEmail().withMessage('Debes anotar un email válido'),
+    body('email').notEmpty().withMessage('Debes anotar tu correo con el que te registraste').isEmail().withMessage('Debes anotar un email válido'),
     body('password').notEmpty().withMessage('Debes anotar tu contraseña')
 ];
 

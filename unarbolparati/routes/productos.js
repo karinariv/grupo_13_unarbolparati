@@ -27,8 +27,8 @@ const upload = multer({storage: storage});
 const uploadMultiple = upload.fields([{ name: 'imagen1', maxCount: 1}, { name: 'imagen2', maxCount: 1}]);
 
 const validateProductsForm = [
-    body('nombre').notEmpty().isLength({ min: 5}).withMessage("Ingresa correctamente el nombre del producto. Debe tener al menos 5 caracteres.")
-    
+    //body('nombre').notEmpty().isLength({ min: 5}).withMessage("Ingresa correctamente el nombre del producto. Debe tener al menos 5 caracteres.")
+
 ];
 
 // crear producto
