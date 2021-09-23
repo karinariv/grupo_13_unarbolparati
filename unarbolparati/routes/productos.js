@@ -3,6 +3,7 @@ const router = express.Router();
 const path = require('path');
 const multer = require('multer');
 const listProdController = require('../controllers/listProdController');
+const { body } = require('express-validator');
 
 //router.get('/', listProdController.simplyProducts);
 
@@ -25,9 +26,14 @@ const storage = multer.diskStorage({
 const upload = multer({storage: storage});
 const uploadMultiple = upload.fields([{ name: 'imagen1', maxCount: 1}, { name: 'imagen2', maxCount: 1}]);
 
+const validateProductsForm = [
+    body('nombre').notEmpty().isLength({ min: 5}).withMessage("Ingresa correctamente el nombre del producto. Debe tener al menos 5 caracteres.")
+    
+];
+
 // crear producto
 router.get('/crear', productos2Controller.crear);
-router.post('/crear', uploadMultiple, productos2Controller.almacenar);
+router.post('/crear', [validateProductsForm, uploadMultiple], productos2Controller.almacenar);
 
 // editar producto
 router.get('/editar/:id', productos2Controller.editar);
