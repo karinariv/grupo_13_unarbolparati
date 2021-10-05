@@ -467,6 +467,11 @@ display: flex;
     background-color: #01937c;
 }
 
+.text-danger {
+    color: red;
+    padding: 0%;
+    padding-left: 25px;
+}
 
 /* Estilos Panel de Administrador */
 
