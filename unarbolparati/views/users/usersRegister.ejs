@@ -10,32 +10,45 @@
     <main>
     <h1 class="title-login"> Registro de Usuario </h1>
     <br>
+
+    <% if (typeof errors != 'undefined') { %>
+        <p style="color: red">ERROR</p>
+        <ul>
+            <% for (let i=0; i < errors.length; i++) { %>
+                <li>
+                    <%=errors[i].msg%>
+                </li>
+            <% } %>
+        </ul>
+    <% } %>
+
+
     <form action="/users/crearUsuario" method="POST" enctype="multipart/form-data">
         <div class="login-box">
             <br>
             <div class="addProduct">
                 <label for="nombre" class="label"> Nombre: </label>
-                <input type="text" name="nombre" id="nombre" required> 
+                <input type="text" name="nombre" id="nombre"> 
             </div>
             <br>
             <div class="addProduct">
                 <label for="apellido" class="label"> Apellido: </label>
-                <input type="text" name="apellido" id="apellido" required> 
+                <input type="text" name="apellido" id="apellido"> 
             </div>
             <br>
             <div class="addProduct">
                 <label for="email" class="label"> Correo electrónico:  </label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email">
             </div>
             <br>
             <div class="addProduct">
                 <label for="password" class="label"> Contraseña:  </label>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password">
             </div>
             <br>
             <div class="addProduct">
                 <label for="imagenUsuario" class="label"> Cargar Imagen de Usuario: </label>
-                <input type="file" name="imagenUsuario" id="imagenUsuario" multiple required>
+                <input type="file" name="imagenUsuario" id="imagenUsuario" multiple>
             </div>
             <br>
             <div class="addProduct">

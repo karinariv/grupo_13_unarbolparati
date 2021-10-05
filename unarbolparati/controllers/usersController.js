@@ -18,15 +18,21 @@ const usersController = {
 
     almacenar: (req, res) => {
         
-        db.User.create({
-            id_user: getIdUsuario(),
-            firstName: req.body.nombre,
-            lastName: req.body.apellido,
-            email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10),
-            image: '/img/users/' + req.file.filename,
-            category: req.body.categoria
-        })
+        let errors = validationResult(req);
+
+        if (errors.isEmpty()) {
+            db.User.create({
+                id_user: getIdUsuario(),
+                firstName: req.body.nombre,
+                lastName: req.body.apellido,
+                email: req.body.email,
+                password: bcrypt.hashSync(req.body.password, 10),
+                image: '/img/users/' + req.file.filename,
+                category: req.body.categoria
+            });
+        } else {
+            return res.render('users/usersRegister', {errors: errors.errors});
+        }
 
         //users.push(nuevoUsuario);
 
