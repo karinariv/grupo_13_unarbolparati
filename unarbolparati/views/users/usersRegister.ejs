@@ -11,8 +11,8 @@
     <h1 class="title-login"> Registro de Usuario </h1>
     <br>
 
-    <% if (typeof errors != 'undefined') { %>
-        <p style="color: red">ERROR</p>
+    <!-- <% if (typeof errors != 'undefined') { %>
+        <p style="color: red">ERRORES</p>
         <ul>
             <% for (let i=0; i < errors.length; i++) { %>
                 <li>
@@ -20,7 +20,7 @@
                 </li>
             <% } %>
         </ul>
-    <% } %>
+    <% } %> -->
 
 
     <form action="/users/crearUsuario" method="POST" enctype="multipart/form-data">
@@ -28,23 +28,43 @@
             <br>
             <div class="addProduct">
                 <label for="nombre" class="label"> Nombre: </label>
-                <input type="text" name="nombre" id="nombre"> 
+                <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : ''%>"> 
             </div>
+            <% if (locals.errors && errors.nombre) { %>
+                <div class="text-danger">
+                    <%= errors.nombre.msg %>
+                </div>
+            <% } %>           
             <br>
             <div class="addProduct">
                 <label for="apellido" class="label"> Apellido: </label>
-                <input type="text" name="apellido" id="apellido"> 
+                <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : ''%>"> 
             </div>
+            <% if (locals.errors && errors.apellido) { %>
+                <div class="text-danger">
+                    <%= errors.apellido.msg %>
+                </div>
+            <% } %>
             <br>
             <div class="addProduct">
                 <label for="email" class="label"> Correo electrónico:  </label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : ''%>">
             </div>
+            <% if (locals.errors && errors.email) { %>
+                <div class="text-danger">
+                    <%= errors.email.msg %>
+                </div>
+            <% } %>
             <br>
             <div class="addProduct">
                 <label for="password" class="label"> Contraseña:  </label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : ''%>">
             </div>
+            <% if (locals.errors && errors.password) { %>
+                <div class="text-danger">
+                    <%= errors.password.msg %>
+                </div>
+            <% } %>
             <br>
             <div class="addProduct">
                 <label for="imagenUsuario" class="label"> Cargar Imagen de Usuario: </label>

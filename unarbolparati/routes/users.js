@@ -28,10 +28,25 @@ const validateLogin = [
 
 //validaciones para crear usuario
 const validateSignup = [
-    body('nombre').notEmpty().withMessage('Debes anotar tu nombre'),
-    body('apellido').notEmpty().withMessage('Debes anotar tu apellido'),
-    body('email').notEmpty().isEmail().withMessage('Debes anotar un email válido'),
-    body('password').notEmpty().withMessage('Debes anotar una contraseña')
+    body('nombre').notEmpty().withMessage('Debes escribir tu nombre').bail().isLength({min:2}).withMessage("El nombre debe tener al menos 2 caracteres"),
+    body('apellido').notEmpty().withMessage('Debes anotar tu apellido').bail()
+        .isLength({min:2}).withMessage("El apellido debe tener al menos 2 caracteres"),
+    body('email').notEmpty().withMessage('Debes anotar un email válido').bail().isEmail(),
+    body('password').notEmpty().withMessage('Debes anotar una contraseña'),
+    body('imagenUsuario').custom((value, {req}) => {
+        let file = req.files.imagenUsuario;
+        let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+        if (!file) {
+            throw new Error('Elige una imagen');
+        } else {
+            let files = req.files.imagenUsuario[0];
+            let fileExtension = path.extname(files.originalname);
+            if(!acceptedExtensions.includes(fileExtension)){
+                throw new Error("Las extensiones aceptadas son .jpg, .jpeg, .png y .gif");
+            }
+        }
+        return true;
+    })
 ];
 
 // rutas para crear usuario

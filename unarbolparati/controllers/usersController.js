@@ -30,14 +30,12 @@ const usersController = {
                 image: '/img/users/' + req.file.filename,
                 category: req.body.categoria
             });
+            res.render('users/userRegistered');
         } else {
-            return res.render('users/usersRegister', {errors: errors.errors});
+            res.render('users/usersRegister', { errors: errors.mapped(), old: req.body});
+            console.log(errors);
         }
-
-        //users.push(nuevoUsuario);
-
-        //fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
-        res.render('users/userRegistered');
+                
     },
 
     login: (req, res) => {
