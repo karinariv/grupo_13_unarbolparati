@@ -28,12 +28,19 @@ const validateLogin = [
 
 //validaciones para crear usuario
 const validateSignup = [
-    body('nombre').notEmpty().withMessage('Debes escribir tu nombre').bail().isLength({min:2}).withMessage("El nombre debe tener al menos 2 caracteres"),
-    body('apellido').notEmpty().withMessage('Debes anotar tu apellido').bail()
+    body('nombre')
+        .notEmpty().withMessage('Debes escribir tu nombre').bail()
+        .isLength({min:2}).withMessage("El nombre debe tener al menos 2 caracteres"),
+    body('apellido')
+        .notEmpty().withMessage('Debes anotar tu apellido').bail()
         .isLength({min:2}).withMessage("El apellido debe tener al menos 2 caracteres"),
-    body('email').notEmpty().withMessage('Debes anotar un email válido').bail().isEmail(),
-    body('password').notEmpty().withMessage('Debes anotar una contraseña'),
-    body('imagenUsuario').custom((value, {req}) => {
+    body('email')
+        .notEmpty().withMessage('Debes anotar un email válido').bail()
+        .isEmail().withMessage('Debe ser un email válido'),
+    body('password')
+        .notEmpty().withMessage('Debes anotar una contraseña'),
+    body('imagenUsuario')
+        .custom((value, {req}) => {
         let file = req.files.imagenUsuario;
         let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
         if (!file) {
@@ -51,7 +58,7 @@ const validateSignup = [
 
 // rutas para crear usuario
 router.get('/crearUsuario', usersController.crear);
-router.post('/crearUsuario', [validateSignup, upload.single('imagenUsuario')], usersController.almacenar);
+router.post('/crearUsuario', [upload.single('imagenUsuario'), validateSignup], usersController.almacenar);
 
 //para el login
 router.get('/', usersMiddleware, usersController.login);
