@@ -10,12 +10,17 @@
     <main>
     <h1 class="title-login"> Agregar Producto </h1>
     <br>
-    <form action="/productos/crear" method="POST" enctype="multipart/form-data">
+    <form class="addingProd" action="/productos/crear" method="POST" enctype="multipart/form-data">
         <div class="login-box">
             <br>
             <div class="addProduct">
                 <label for="nombre" class="label"> Nombre común: </label>
-                <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : ''%>"> 
+                <input class="inputs input-nombre" type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : ''%>"> 
+                <i class="fas fas-nombre"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-nombre1">El nombre debe especificarse</span>
+                <span class="p p-nombre2">Asegúrate de que el nombre tenga al menos 5 caracteres</span>
             </div>
             <% if (locals.errors && errors.nombre) { %>
                 <div class="text-danger">
@@ -44,7 +49,12 @@
             <br>
             <div class="addProduct">
                 <label for="precio" class="label"> Precio:  </label>
-                <input type="text" name="precio" id="precio" value="<%= locals.old && old.precio ? old.precio : ''%>" >
+                <input class="inputs input-precio" type="text" name="precio" id="precio" value="<%= locals.old && old.precio ? old.precio : ''%>" >
+                <i class="fas fas-precio"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-precio1">El precio debe especificarse</span>
+                <span class="p p-precio2">El precio debe contener solo números</span>
             </div>
             <% if (locals.errors && errors.precio) { %>
                 <div class="text-danger">
@@ -58,7 +68,11 @@
             <br>
             <div class="addProduct">
                 <label for="nombre_cientifico" class="label"> Nombre científico:  </label>
-                <input type="text" name="nombre_cientifico" id="nombre_cientifico" value="<%= locals.old && old.nombre_cientifico ? old.nombre_cientifico : ''%>" >
+                <input class="inputs input-nombre_cientifico" type="text" name="nombre_cientifico" id="nombre_cientifico" value="<%= locals.old && old.nombre_cientifico ? old.nombre_cientifico : ''%>" >
+                <i class="fas fas-nombre_cientifico"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-nombre_cientifico">El nombre científico debe especificarse</span>
             </div>
             <% if (locals.errors && errors.nombre_cientifico) { %>
                 <div class="text-danger">
@@ -68,7 +82,11 @@
             <br>
             <div class="addProduct">
                 <label for="region" class="label"> Región:  </label>
-                <input type="text" name="region" id="region" value="<%= locals.old && old.region ? old.region : ''%>" >
+                <input class="inputs input-region" type="text" name="region" id="region" value="<%= locals.old && old.region ? old.region : ''%>" >
+                <i class="fas fas-region"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-region">La región debe especificarse</span>
             </div>
             <% if (locals.errors && errors.region) { %>
                 <div class="text-danger">
@@ -78,7 +96,11 @@
             <br>
             <div class="addProduct">
                 <label for="tipo" class="label"> Tipo de árbol:  </label>
-                <input type="text" name="tipo" id="tipo" value="<%= locals.old && old.tipo ? old.tipo : ''%>" >
+                <input class="inputs input-tipo" type="text" name="tipo" id="tipo" value="<%= locals.old && old.tipo ? old.tipo : ''%>" >
+                <i class="fas fas-tipo"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-tipo">El tipo debe especificarse</span>
             </div>
             <% if (locals.errors && errors.tipo) { %>
                 <div class="text-danger">
@@ -88,7 +110,11 @@
             <br>
             <div class="addProduct">
                 <label for="altura" class="label"> Altura:  </label>
-                <input type="text" name="altura" id="altura" value="<%= locals.old && old.altura ? old.altura : ''%>" >
+                <input class="inputs input-altura" type="text" name="altura" id="altura" value="<%= locals.old && old.altura ? old.altura : ''%>" >
+                <i class="fas fas-altura"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-altura">La altura debe especificarse</span>
             </div>
             <% if (locals.errors && errors.altura) { %>
                 <div class="text-danger">
@@ -98,7 +124,11 @@
             <br>
             <div class="addProduct">
                 <label for="crecimiento" class="label"> Crecimiento:  </label>
-                <input type="text" name="crecimiento" id="crecimiento" value="<%= locals.old && old.crecimiento ? old.crecimiento : ''%>" >
+                <input class="inputs input-crecimiento" type="text" name="crecimiento" id="crecimiento" value="<%= locals.old && old.crecimiento ? old.crecimiento : ''%>" >
+                <i class="fas fas-crecimiento"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-crecimiento">El crecimiento debe especificarse</span>
             </div>
             <% if (locals.errors && errors.crecimiento) { %>
                 <div class="text-danger">
@@ -108,7 +138,11 @@
             <br>
             <div class="addProduct">
                 <label for="riego" class="label"> Riego:  </label>
-                <input type="text" name="riego" id="riego" value="<%= locals.old && old.riego ? old.riego : ''%>" >
+                <input class="inputs input-riego" type="text" name="riego" id="riego" value="<%= locals.old && old.riego ? old.riego : ''%>" >
+                <i class="fas fas-riego"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-riego">El riego debe especificarse</span>
             </div>
             <% if (locals.errors && errors.riego) { %>
                 <div class="text-danger">
@@ -118,7 +152,11 @@
             <br>
             <div class="addProduct">
                 <label for="suelo" class="label"> Suelo:  </label>
-                <input type="text" name="suelo" id="suelo" value="<%= locals.old && old.suelo ? old.suelo : ''%>" >
+                <input class="inputs input-suelo" type="text" name="suelo" id="suelo" value="<%= locals.old && old.suelo ? old.suelo : ''%>" >
+                <i class="fas fas-suelo"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-suelo">El tipo de suelo debe especificarse</span>
             </div>
             <% if (locals.errors && errors.suelo) { %>
                 <div class="text-danger">
@@ -128,7 +166,11 @@
             <br>
             <div class="addProduct">
                 <label for="clima" class="label"> Clima:  </label>
-                <input type="text" name="clima" id="clima" value="<%= locals.old && old.clima ? old.clima : ''%>" >
+                <input class="inputs input-clima" type="text" name="clima" id="clima" value="<%= locals.old && old.clima ? old.clima : ''%>" >
+                <i class="fas fas-clima"></i>                
+            </div>
+            <div class="ps-errors">
+                <span class="p p-clima">El tipo de clima debe especificarse</span>
             </div>
             <% if (locals.errors && errors.clima) { %>
                 <div class="text-danger">
@@ -138,7 +180,11 @@
             <br>
             <div class="addProduct">
                 <label for="luz" class="label"> Luz necesaria:  </label>
-                <input type="text" name="luz" id="luz" value="<%= locals.old && old.luz ? old.luz : ''%>" >
+                <input class="inputs input-luz" type="text" name="luz" id="luz" value="<%= locals.old && old.luz ? old.luz : ''%>" >
+                <i class="fas fas-luz"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-luz">La luz necesaria debe especificarse</span>
             </div>
             <% if (locals.errors && errors.luz) { %>
                 <div class="text-danger">
@@ -147,8 +193,12 @@
             <% } %>
             <br>
             <div class="addProduct">
-                <label for="fruto" class="label"> Fruto:  </label>
-                <input type="text" name="fruto" id="fruto" value="<%= locals.old && old.fruto ? old.fruto : ''%>" >
+                <label for="fruto input-fruto" class="label"> Fruto:  </label>
+                <input class="inputs" type="text" name="fruto" id="fruto" value="<%= locals.old && old.fruto ? old.fruto : ''%>" >
+                <i class="fas fas-fruto"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-fruto">El fruto debe especificarse</span>
             </div>
             <% if (locals.errors && errors.fruto) { %>
                 <div class="text-danger">
@@ -165,5 +215,6 @@
     </main>
     <!-- Footer -->
     <%- include('../partials/footer') %>
+    <script src="/js/addProdValidator.js"></script>
 </body>
 </html>
