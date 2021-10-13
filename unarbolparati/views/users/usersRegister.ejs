@@ -70,6 +70,11 @@
                 <label for="imagenUsuario" class="label"> Cargar Imagen de Usuario: </label>
                 <input type="file" name="imagenUsuario" id="imagenUsuario" multiple>
             </div>
+            <% if (locals.errors && errors.imagenUsuario) { %>
+                <div class="text-danger">
+                    <%= errors.imagenUsuario.msg %>
+                </div>
+            <% } %>
             <br>
             <div class="addProduct">
                 <label for="categoria" class="label"> Elegir categoría:</label>

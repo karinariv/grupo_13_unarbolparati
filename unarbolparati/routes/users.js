@@ -18,6 +18,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({storage: storage});
+const uploadMultiple = upload.fields([{ name: 'imagenUsuario', maxCount: 1}]);
 
 //validaciones para el login
 const validateLogin = [
@@ -46,7 +47,7 @@ const validateSignup = [
         if (!file) {
             throw new Error('Elige una imagen');
         } else {
-            let files = req.files.imagenUsuario[0];
+            let files = req.files.imagenUsuario[0]; //tal vez aquí sea el issue
             let fileExtension = path.extname(files.originalname);
             if(!acceptedExtensions.includes(fileExtension)){
                 throw new Error("Las extensiones aceptadas son .jpg, .jpeg, .png y .gif");
@@ -58,7 +59,7 @@ const validateSignup = [
 
 // rutas para crear usuario
 router.get('/crearUsuario', usersController.crear);
-router.post('/crearUsuario', [upload.single('imagenUsuario'), validateSignup], usersController.almacenar);
+router.post('/crearUsuario', [uploadMultiple, validateSignup], usersController.almacenar);
 
 //para el login
 router.get('/', usersMiddleware, usersController.login);
