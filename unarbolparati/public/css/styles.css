@@ -473,6 +473,19 @@ display: flex;
     padding-left: 25px;
 }
 
+.d-none {
+    display: none;
+}
+
+.ps-errors {
+    padding: 15px;
+}
+
+.p {
+    color: red;
+    background-color: rgba(255, 0, 0, .2);
+}
+
 /* Estilos Panel de Administrador */
 
 .admin-buttons-box {
