@@ -28,7 +28,12 @@
             <br>
             <div class="addProduct">
                 <label for="nombre" class="label"> Nombre: </label>
-                <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : ''%>"> 
+                <input class="inputs input-nombre" type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : ''%>">
+                <i class="fas fas-nombre"></i> 
+            </div>
+            <div class="ps-errors">
+                <span class="p p-nombre1">El nombre debe especificarse</span>
+                <span class="p p-nombre2">Asegúrate de que el nombre tenga al menos 2 caracteres</span>
             </div>
             <% if (locals.errors && errors.nombre) { %>
                 <div class="text-danger">
@@ -38,7 +43,12 @@
             <br>
             <div class="addProduct">
                 <label for="apellido" class="label"> Apellido: </label>
-                <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : ''%>"> 
+                <input class="inputs input-apellido" type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : ''%>">
+                <i class="fas fas-apellido"></i> 
+            </div>
+            <div class="ps-errors">
+                <span class="p p-apellido1">El apellido debe especificarse</span>
+                <span class="p p-apellido2">Asegúrate de que el nombre tenga al menos 2 caracteres</span>
             </div>
             <% if (locals.errors && errors.apellido) { %>
                 <div class="text-danger">
@@ -48,7 +58,12 @@
             <br>
             <div class="addProduct">
                 <label for="email" class="label"> Correo electrónico:  </label>
-                <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : ''%>">
+                <input class="inputs input-email" type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : ''%>">
+                <i class="fas fas-email"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-email1">El correo debe especificarse</span>
+                <span class="p p-email2">Asegúrate de que el correo sea válido y contenga al menos 3 caracteres</span>
             </div>
             <% if (locals.errors && errors.email) { %>
                 <div class="text-danger">
@@ -58,7 +73,12 @@
             <br>
             <div class="addProduct">
                 <label for="password" class="label"> Contraseña:  </label>
-                <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : ''%>">
+                <input class="inputs input-password" type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : ''%>">
+                <i class="fas fas-password"></i>
+            </div>
+            <div class="ps-errors">
+                <span class="p p-password1">La contraseña debe especificarse</span>
+                <span class="p p-password2">Asegúrate de que la contraseña contenga al menos 8 caracteres</span>
             </div>
             <% if (locals.errors && errors.password) { %>
                 <div class="text-danger">
@@ -94,5 +114,6 @@
     </main>
     <!-- Footer -->
     <%- include('../partials/footer') %>
+    <script src="/js/addUserValidator.js"></script>
 </body>
 </html>
