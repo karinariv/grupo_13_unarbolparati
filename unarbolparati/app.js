@@ -3,8 +3,11 @@ const app = express();
 const mainRouter = require('./routes/mainRouter');
 const rutasProductos = require('./routes/productos');
 const rutasUsuarios = require('./routes/users')
+const rutasAPIProducts = require('./routes/api_productos');
 const session = require('express-session')
 
+// importar rutas de APIs
+const rutaApiUsers = require('./routes/api-users');
 
 const path = require('path');
 
@@ -53,6 +56,10 @@ app.use('/productos',rutasProductos); //nuevo recurso especificado en routes pro
 
 app.use('/users', rutasUsuarios);
 
+// APIs 
+app.use('/api/products', rutasAPIProducts);
+
+app.use('/api-users', rutaApiUsers);
 
 
 
