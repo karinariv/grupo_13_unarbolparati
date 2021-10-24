@@ -17,4 +17,7 @@ router.put('/update/:id', api_productosController.update);
 // borrar producto
 router.delete('/delete/:id', api_productosController.delete);
 
+// Search
+router.get('/search', api_productosController.search);
+
 module.exports = router;

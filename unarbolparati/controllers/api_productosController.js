@@ -1,5 +1,6 @@
 const db = require('../database/models');
 const { v4: getId} = require('uuid');
+const Op = db.Sequelize.Op;
 getId();
 
 const api_productosController = {
@@ -76,6 +77,19 @@ const api_productosController = {
             .then(() => {
                 return res.json('This product has been deleted');
             });
+    },
+
+    search: (req, res) => {
+        db.Product
+            .findAll({
+                where: {
+                    nombre: {[Op.like]: '%' + req.query.keyword + '%'}
+                }
+            })
+            .then(users => {
+                return res.status(200).json(users);
+            })
+            .catch((error) =>  {console.log(error); });
     }
 }
 
